@@ -2,6 +2,8 @@
 
 SHELLDIR=$(dirname $(readlink -f $0))
 
+PLAYCEKUBE_VERSION=$(git branch --show-current)
+
 CHARTS_ROOT_PATH=${SHELLDIR}
 ICON_DEST_PATH=${CHARTS_ROOT_PATH}/assets/icon
 
@@ -17,20 +19,10 @@ do
   tar zxf ${CHART} -C ${WORKTEMP}
   cd ${WORKTEMP}/${CHARTNAME}
 
-  ICONURL=$(yq .icon Chart.yaml)
-  if [ "${ICONURL}" != "" ] && [ "${ICONURL}" != "null" ]; then
-    ICONEXT=$(echo "${ICONURL}" | cut -d "?" -f 1 | awk -F "/" '{ print $NF }' | awk -F "." '{ print $NF }' | sed "s/[^a-zA-Z]*//g")
-    if [ "${ICONEXT}" == "" ] || [ "${ICONEXT}" == "" ]; then
-      ICONEXT=icon
-    fi
-    curl -s -L "${ICONURL}" -o icon.temp
-    if [ -s icon.temp ]; then
-      mv -f icon.temp ${ICON_DEST_PATH}/${CHARTNAME}-icon.${ICONEXT}
-    fi
-    yq -i ".icon = \"/assets/icon/${CHARTNAME}-icon.${ICONEXT}\"" Chart.yaml
+  OLDCHARTNAME=$(yq .icon Chart.yaml)
+  yq -i ".icon = \"https://github.com/OpenSourceConsulting/playcekube-charts/blob/${PLAYCEKUBE_VERSION}${OLDCHARTNAME}\"" Chart.yaml
 
-    helm package ${WORKTEMP}/${CHARTNAME} -d $(dirname ${CHART})
-  fi
+  helm package ${WORKTEMP}/${CHARTNAME} -d $(dirname ${CHART})
 done
 
 # index.yaml update

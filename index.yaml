@@ -13,7 +13,7 @@ entries:
       catalog.cattle.io/release-name: argo-cd
     apiVersion: v2
     appVersion: v2.9.5
-    created: "2024-07-18T17:41:11.911267788+09:00"
+    created: "2024-07-18T17:54:07.817270441+09:00"
     dependencies:
     - condition: redis-ha.enabled
       name: redis-ha
@@ -21,9 +21,9 @@ entries:
       version: 4.23.0
     description: A Helm chart for Argo CD, a declarative, GitOps continuous delivery
       tool for Kubernetes.
-    digest: 0f9bdd13a4f87659daa3d8f18af3074b488c9cce1196dc36dc6b55f405fe1920
+    digest: b26a4f0fb10cf3b6460427c1fce1bb8fc7a842389b50a814eaea1d07d2e7b773
     home: https://github.com/argoproj/argo-helm
-    icon: /assets/icon/argo-cd-icon.png
+    icon: https://github.com/OpenSourceConsulting/playcekube-charts/blob/v2.1.0/assets/icon/argo-cd-icon.png
     keywords:
     - develops
     - argoproj
@@ -48,7 +48,7 @@ entries:
       catalog.cattle.io/release-name: argo-cd
     apiVersion: v2
     appVersion: v2.5.4
-    created: "2024-07-18T17:41:11.883889379+09:00"
+    created: "2024-07-18T17:54:07.789047858+09:00"
     dependencies:
     - condition: redis-ha.enabled
       name: redis-ha
@@ -56,9 +56,9 @@ entries:
       version: 4.22.3
     description: A Helm chart for Argo CD, a declarative, GitOps continuous delivery
       tool for Kubernetes.
-    digest: 37abdac180eb6552db62134949c0ca552bfaa249b0a6bdcbdf9c1baa38235d67
+    digest: 3e75d8082c95b712f285abb9e977977b16606d171dde201a40c5b49353a1bf61
     home: https://github.com/argoproj/argo-helm
-    icon: /assets/icon/argo-cd-icon.png
+    icon: https://github.com/OpenSourceConsulting/playcekube-charts/blob/v2.1.0/assets/icon/argo-cd-icon.png
     keywords:
     - develops
     - argoproj
@@ -83,7 +83,7 @@ entries:
       catalog.cattle.io/release-name: argo-cd
     apiVersion: v2
     appVersion: v2.4.3
-    created: "2024-07-18T17:41:11.860079795+09:00"
+    created: "2024-07-18T17:54:07.758286524+09:00"
     dependencies:
     - condition: redis-ha.enabled
       name: redis-ha
@@ -91,9 +91,9 @@ entries:
       version: 4.17.1
     description: A Helm chart for Argo CD, a declarative, GitOps continuous delivery
       tool for Kubernetes.
-    digest: 3a8f31a2a090d6554d5bfe7718f9468f6ff63db6c8477b74e1ab74c262e3d272
+    digest: 5404e0eab8f5ab579fb9141196b987011607136f94faf5d663b9be896dcc8ed0
     home: https://github.com/argoproj/argo-helm
-    icon: /assets/icon/argo-cd-icon.png
+    icon: https://github.com/OpenSourceConsulting/playcekube-charts/blob/v2.1.0/assets/icon/argo-cd-icon.png
     keywords:
     - develops
     - argoproj
@@ -117,12 +117,12 @@ entries:
       catalog.cattle.io/release-name: argo-events
     apiVersion: v2
     appVersion: v1.7.1
-    created: "2024-07-18T17:41:11.913040482+09:00"
+    created: "2024-07-18T17:54:07.819086102+09:00"
     description: A Helm chart for Argo Events, the event-driven workflow automation
       framework
-    digest: 4372033f6c32ca0caa7f5a43d58c6f89c1467d8d271864c3632a7c8a09252c4d
+    digest: 4a73f8483ca5d65e7bfa61d42a1da1b37ab3c5b965444b66dd697cd1e8907c74
     home: https://github.com/argoproj/argo-helm
-    icon: /assets/icon/argo-events-icon.png
+    icon: https://github.com/OpenSourceConsulting/playcekube-charts/blob/v2.1.0/assets/icon/argo-events-icon.png
     keywords:
     - develops
     - argoproj
@@ -150,11 +150,11 @@ entries:
       catalog.cattle.io/release-name: argo-rollouts
     apiVersion: v2
     appVersion: v1.6.4
-    created: "2024-07-18T17:41:11.927180604+09:00"
+    created: "2024-07-18T17:54:07.833877689+09:00"
     description: A Helm chart for Argo Rollouts
-    digest: 8e62bac532d12d5f0b3ea8587b5432c477606d9cb238a93f45bbdca26558bb5b
+    digest: 5075636bed9b77283c74f88c3bde2e25c9f5a55d775579d20e65d821f0c20323
     home: https://github.com/argoproj/argo-helm
-    icon: /assets/icon/argo-rollouts-icon.png
+    icon: https://github.com/OpenSourceConsulting/playcekube-charts/blob/v2.1.0/assets/icon/argo-rollouts-icon.png
     keywords:
     - develops
     - argoproj
@@ -176,11 +176,11 @@ entries:
       catalog.cattle.io/release-name: argo-rollouts
     apiVersion: v2
     appVersion: v1.2.0
-    created: "2024-07-18T17:41:11.919281237+09:00"
+    created: "2024-07-18T17:54:07.825762987+09:00"
     description: A Helm chart for Argo Rollouts
-    digest: d7a56313511832993e80e13f94644fdbc68a4d0e76c0d3c605ea9643e267ce81
+    digest: 04223757299c4371251199ca41f1f50aa8112fa4e5b69792378360fd36d02667
     home: https://github.com/argoproj/argo-helm
-    icon: /assets/icon/argo-rollouts-icon.png
+    icon: https://github.com/OpenSourceConsulting/playcekube-charts/blob/v2.1.0/assets/icon/argo-rollouts-icon.png
     keywords:
     - develops
     maintainers:
@@ -198,9 +198,10 @@ entries:
       catalog.cattle.io/release-name: csi-driver-nfs
     apiVersion: v1
     appVersion: v4.5.0
-    created: "2024-07-18T17:41:11.61533376+09:00"
+    created: "2024-07-18T17:54:07.484698742+09:00"
     description: CSI NFS Driver for Kubernetes
-    digest: 380209014f5d01a6c185cc18cc25683d738eac1925a677e77c1b7d4c0a658432
+    digest: a17981d2b848c7e99b91503a7448b4703d4aaa233426c2a80d060e011095eaca
+    icon: https://github.com/OpenSourceConsulting/playcekube-charts/blob/v2.1.0null
     keywords:
     - storage
     - infrastructure
@@ -214,9 +215,10 @@ entries:
       catalog.cattle.io/release-name: csi-driver-nfs
     apiVersion: v1
     appVersion: v4.4.0
-    created: "2024-07-18T17:41:11.613893447+09:00"
+    created: "2024-07-18T17:54:07.483132525+09:00"
     description: CSI NFS Driver for Kubernetes
-    digest: e1f61f51037cde85ad10b25b9b4fecedfc0ea714384aa8ce23f0bd18d9dbf60f
+    digest: 8e8f5cc7913fef4155c2c92ccb58a9d1f1d839e68fc8f5ff910b301f604a28c8
+    icon: https://github.com/OpenSourceConsulting/playcekube-charts/blob/v2.1.0null
     keywords:
     - storage
     - infrastructure
@@ -230,9 +232,10 @@ entries:
       catalog.cattle.io/release-name: csi-driver-nfs
     apiVersion: v1
     appVersion: v4.0.0
-    created: "2024-07-18T17:41:11.612478026+09:00"
+    created: "2024-07-18T17:54:07.481554157+09:00"
     description: CSI NFS Driver for Kubernetes
-    digest: 96dcb92f935dda74ba174a918af7df2a054ad6ea03493486aee99c7021ae6d0b
+    digest: 3a2cc3af7f4e87128a28f8fe1e4afece26998284bed0b1778476e9376556d45f
+    icon: https://github.com/OpenSourceConsulting/playcekube-charts/blob/v2.1.0null
     keywords:
     - storage
     - infrastructure
@@ -247,11 +250,11 @@ entries:
       catalog.cattle.io/release-name: gatekeeper
     apiVersion: v2
     appVersion: v3.11.0
-    created: "2024-07-18T17:41:11.619945487+09:00"
+    created: "2024-07-18T17:54:07.491315934+09:00"
     description: A Helm chart for Gatekeeper
-    digest: 7ecaae56daec75fb2709ba2bc5a26ea83490a2127cc04e2e50a2b1a4974c8a70
+    digest: 24bd1f7eb960fe9174872c8440f155b31f00b0773173155556d4b6922d800614
     home: https://github.com/open-policy-agent/gatekeeper
-    icon: /assets/icon/gatekeeper-icon.svg
+    icon: https://github.com/OpenSourceConsulting/playcekube-charts/blob/v2.1.0/assets/icon/gatekeeper-icon.svg
     keywords:
     - security
     - infrastructure
@@ -269,7 +272,7 @@ entries:
       catalog.cattle.io/release-name: gitea
     apiVersion: v2
     appVersion: 1.21.3
-    created: "2024-07-18T17:41:11.960249563+09:00"
+    created: "2024-07-18T17:54:07.863293209+09:00"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -284,8 +287,8 @@ entries:
       repository: oci://registry-1.docker.io/bitnamicharts
       version: 9.1.3
     description: Gitea Helm chart for Kubernetes
-    digest: b3a836c58aabdcd8e4b1565db66f648d4f4e27b04f7ce4a2fe30d8cb4fbb9a90
-    icon: /assets/icon/gitea-icon.svg
+    digest: c977c712ad6186298574430ed402c795ed53daef8c87838abd0695f03880f1a9
+    icon: https://github.com/OpenSourceConsulting/playcekube-charts/blob/v2.1.0/assets/icon/gitea-icon.svg
     keywords:
     - develops
     - git
@@ -322,7 +325,7 @@ entries:
       catalog.cattle.io/release-name: gitea
     apiVersion: v2
     appVersion: 1.16.8
-    created: "2024-07-18T17:41:12.000196933+09:00"
+    created: "2024-07-18T17:54:07.89591139+09:00"
     dependencies:
     - condition: memcached.enabled
       name: memcached
@@ -341,8 +344,8 @@ entries:
       repository: https://raw.githubusercontent.com/bitnami/charts/eb5f9a9513d987b519f0ecd732e7031241c50328/bitnami
       version: 9.3.6
     description: Gitea Helm chart for Kubernetes
-    digest: 594c667f9cad8e67c1fa696338eda54cb6ffea1cf127f51d18da21188e87ff93
-    icon: /assets/icon/gitea-icon.png
+    digest: 4de3939df850806f0565a944197b07b6f9e0d40dd56d5e6096e197d3a4251a96
+    icon: https://github.com/OpenSourceConsulting/playcekube-charts/blob/v2.1.0/assets/icon/gitea-icon.png
     keywords:
     - develops
     - git
@@ -378,7 +381,7 @@ entries:
       catalog.cattle.io/release-name: gitlab
     apiVersion: v1
     appVersion: v16.8.0
-    created: "2024-07-18T17:41:12.151244051+09:00"
+    created: "2024-07-18T17:54:08.054963324+09:00"
     dependencies:
     - name: gitlab
       repository: ""
@@ -436,9 +439,9 @@ entries:
       repository: https://haproxytech.github.io/helm-charts
       version: 1.32.0
     description: GitLab is the most comprehensive AI-powered DevSecOps Platform.
-    digest: 0eea7a76ebf4635d1f853a24cacf2c295023ef638d7ba7ad2d093104f6dfa723
+    digest: bff566eef6fc9e481c3f65809450a8786eda2cda9e0f185a0f2f83e3696cac2a
     home: https://about.gitlab.com/
-    icon: /assets/icon/gitlab-icon.png
+    icon: https://github.com/OpenSourceConsulting/playcekube-charts/blob/v2.1.0/assets/icon/gitlab-icon.png
     keywords:
     - gitlab
     - develops
@@ -457,7 +460,7 @@ entries:
       catalog.cattle.io/release-name: gitlab
     apiVersion: v1
     appVersion: 15.1.1
-    created: "2024-07-18T17:41:12.068474947+09:00"
+    created: "2024-07-18T17:54:07.967825481+09:00"
     dependencies:
     - name: gitlab
       repository: ""
@@ -501,9 +504,9 @@ entries:
       repository: ""
       version: '*.*.*'
     description: The One DevOps Platform
-    digest: e1890b19d6086f9a33328b2c43f3de193cc2d4650fa98abb642f3f40be119a2b
+    digest: c75d8f33f345bc0b1033a4114693766b6816dfb72a45f58ce576bb44faba6a0d
     home: https://about.gitlab.com/
-    icon: /assets/icon/gitlab-icon.png
+    icon: https://github.com/OpenSourceConsulting/playcekube-charts/blob/v2.1.0/assets/icon/gitlab-icon.png
     keywords:
     - develops
     - gitlab
@@ -546,7 +549,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 2.10.0
-    created: "2024-07-18T17:41:12.221480596+09:00"
+    created: "2024-07-18T17:54:08.119930115+09:00"
     dependencies:
     - condition: redis.enabled
       name: redis
@@ -564,9 +567,9 @@ entries:
     description: Harbor is an open source trusted cloud-native registry to store,
       sign, and scan content. It adds functionalities like security, identity, and
       management to the open source Docker distribution.
-    digest: edd8ba83c6a767abfe8448905ccd28faa37768f67ab7622a6aeac3dc494a4313
+    digest: b56a91289aac505906101214b5fc7e06fecd041aedc28c084383ec08f6ef8b9d
     home: https://bitnami.com
-    icon: /assets/icon/harbor-icon.png
+    icon: https://github.com/OpenSourceConsulting/playcekube-charts/blob/v2.1.0/assets/icon/harbor-icon.png
     keywords:
     - develops
     - docker
@@ -589,7 +592,7 @@ entries:
       category: Infrastructure
     apiVersion: v2
     appVersion: 2.5.2
-    created: "2024-07-18T17:41:12.184634633+09:00"
+    created: "2024-07-18T17:54:08.086321189+09:00"
     dependencies:
     - condition: redis.enabled
       name: redis
@@ -605,9 +608,9 @@ entries:
     description: Harbor is an open source trusted cloud-native registry to store,
       sign, and scan content. It adds functionalities like security, identity, and
       management to the open source Docker distribution.
-    digest: 16585cf0f607a9f8d809cff69a03d347493db7067960e307e34cc7d9920e3c7a
+    digest: 11cb5f7578c7bd521a90c3750afc45bc0b1bf83d075002e3f975d519ce6fd5fa
     home: https://github.com/bitnami/charts/tree/master/bitnami/harbor
-    icon: /assets/icon/harbor-icon.png
+    icon: https://github.com/OpenSourceConsulting/playcekube-charts/blob/v2.1.0/assets/icon/harbor-icon.png
     keywords:
     - develops
     - docker
@@ -642,12 +645,12 @@ entries:
       catalog.cattle.io/release-name: ingress-nginx
     apiVersion: v2
     appVersion: 1.9.5
-    created: "2024-07-18T17:41:11.636214077+09:00"
+    created: "2024-07-18T17:54:07.505526822+09:00"
     description: Ingress controller for Kubernetes using NGINX as a reverse proxy
       and load balancer
-    digest: 2ed36b1ed321e17857505d716f57c58f3efaafb7b988d2da22fefe5d511689a8
+    digest: 090f734cb1405563d3ce2edfa68cb4ea1b0e4889573b2446ae8fcbc1494b1448
     home: https://github.com/kubernetes/ingress-nginx
-    icon: /assets/icon/ingress-nginx-icon.png
+    icon: https://github.com/OpenSourceConsulting/playcekube-charts/blob/v2.1.0/assets/icon/ingress-nginx-icon.png
     keywords:
     - networking
     - infrastructure
@@ -680,12 +683,12 @@ entries:
       catalog.cattle.io/release-name: ingress-nginx
     apiVersion: v2
     appVersion: 1.2.1
-    created: "2024-07-18T17:41:11.628834482+09:00"
+    created: "2024-07-18T17:54:07.498848726+09:00"
     description: Ingress controller for Kubernetes using NGINX as a reverse proxy
       and load balancer
-    digest: 4b561c698e48b0b767c72438fbe8ff49f201dfbdce6c0c991527100335d28cbb
+    digest: 399ff1ecc89c779aa8da629f60d88de670c9fe3a4b60c79eb72c7a304653b03b
     home: https://github.com/kubernetes/ingress-nginx
-    icon: /assets/icon/ingress-nginx-icon.png
+    icon: https://github.com/OpenSourceConsulting/playcekube-charts/blob/v2.1.0/assets/icon/ingress-nginx-icon.png
     keywords:
     - networking
     - infrastructure
@@ -730,13 +733,13 @@ entries:
       catalog.cattle.io/release-name: jenkins
     apiVersion: v2
     appVersion: 2.426.2
-    created: "2024-07-18T17:41:12.235290346+09:00"
+    created: "2024-07-18T17:54:08.131724841+09:00"
     description: Jenkins - Build great things at any scale! The leading open source
       automation server, Jenkins provides over 1800 plugins to support building, deploying
       and automating any project.
-    digest: b089173bb9126b4465753cb64867576501f75221b977cd29aa621feb0409bcd7
+    digest: 6765c08856e3784c406804a1bc487ae3832243e93c83463c4be93021200365cc
     home: https://jenkins.io/
-    icon: /assets/icon/jenkins-icon.svg
+    icon: https://github.com/OpenSourceConsulting/playcekube-charts/blob/v2.1.0/assets/icon/jenkins-icon.svg
     keywords:
     - develops
     - jenkins
@@ -782,13 +785,13 @@ entries:
       catalog.cattle.io/release-name: jenkins
     apiVersion: v2
     appVersion: 2.346.1
-    created: "2024-07-18T17:41:12.226948793+09:00"
+    created: "2024-07-18T17:54:08.12547329+09:00"
     description: Jenkins - Build great things at any scale! The leading open source
       automation server, Jenkins provides hundreds of plugins to support building,
       deploying and automating any project.
-    digest: 453bed248dbfa2c909a9f06b9bd7d0947780c146820be31dcd03c5a799ebb513
+    digest: 27c59737f0872caaeb75f87d2b84b465536bfa1b214ad2f94c053087acfabda2
     home: https://jenkins.io/
-    icon: /assets/icon/jenkins-icon.svg
+    icon: https://github.com/OpenSourceConsulting/playcekube-charts/blob/v2.1.0/assets/icon/jenkins-icon.svg
     keywords:
     - develops
     maintainers:
@@ -825,7 +828,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 23.0.4
-    created: "2024-07-18T17:41:11.654242109+09:00"
+    created: "2024-07-18T17:54:07.52696953+09:00"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -839,9 +842,9 @@ entries:
     description: Keycloak is a high performance Java-based identity and access management
       solution. It lets developers add an authentication layer to their applications
       with minimum effort.
-    digest: fc43054ae7de4eab70fed248d7d682b5db25e3a24e974ff06ecccc8b3064fa64
+    digest: c7b32c66f88cf41f4a4bfd446dc020a80707144997081a57bb7ebaf544ae5f6c
     home: https://bitnami.com
-    icon: /assets/icon/keycloak-icon.png
+    icon: https://github.com/OpenSourceConsulting/playcekube-charts/blob/v2.1.0/assets/icon/keycloak-icon.png
     keywords:
     - security
     - infrastructure
@@ -863,7 +866,7 @@ entries:
       category: DeveloperTools
     apiVersion: v2
     appVersion: 18.0.0
-    created: "2024-07-18T17:41:11.666486687+09:00"
+    created: "2024-07-18T17:54:07.546680145+09:00"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -877,9 +880,9 @@ entries:
     description: Keycloak is a high performance Java-based identity and access management
       solution. It lets developers add an authentication layer to their applications
       with minimum effort.
-    digest: 258eacee64111ed706f51f75e64bf2533dd64157030239927b761cda7b022c8a
+    digest: 8cb05f29257276a863dbb517d102c515335164f2598c44c485241df3264a67be
     home: https://www.keycloak.org
-    icon: /assets/icon/keycloak-icon.png
+    icon: https://github.com/OpenSourceConsulting/playcekube-charts/blob/v2.1.0/assets/icon/keycloak-icon.png
     keywords:
     - security
     - infrastructure
@@ -909,7 +912,7 @@ entries:
       catalog.cattle.io/release-name: kube-prometheus-stack
     apiVersion: v2
     appVersion: v0.71.0
-    created: "2024-07-18T17:41:11.768668043+09:00"
+    created: "2024-07-18T17:54:07.666919908+09:00"
     dependencies:
     - condition: crds.enabled
       name: crds
@@ -935,9 +938,9 @@ entries:
       and Prometheus rules combined with documentation and scripts to provide easy
       to operate end-to-end Kubernetes cluster monitoring with Prometheus using the
       Prometheus Operator.
-    digest: 37cd08497b7ee1aab651621b059feb1b75e5576976524a467ca42f1197edd996
+    digest: 3da62200963d89b0e3784541e6a4183ba51736128e84645345832a573360e260
     home: https://github.com/prometheus-operator/kube-prometheus
-    icon: /assets/icon/kube-prometheus-stack-icon.png
+    icon: https://github.com/OpenSourceConsulting/playcekube-charts/blob/v2.1.0/assets/icon/kube-prometheus-stack-icon.png
     keywords:
     - monitoring
     - infrastructure
@@ -982,7 +985,7 @@ entries:
       catalog.cattle.io/release-name: kube-prometheus-stack
     apiVersion: v2
     appVersion: 0.56.2
-    created: "2024-07-18T17:41:11.709273773+09:00"
+    created: "2024-07-18T17:54:07.593235552+09:00"
     dependencies:
     - condition: kubeStateMetrics.enabled
       name: kube-state-metrics
@@ -1000,9 +1003,9 @@ entries:
       and Prometheus rules combined with documentation and scripts to provide easy
       to operate end-to-end Kubernetes cluster monitoring with Prometheus using the
       Prometheus Operator.
-    digest: 8d009065ceafbe4c1498be46abae3ae36c13e6d8fcb5a8fb835be93a8c05a895
+    digest: 7bd0a950720aa6c35cb6b07c5105f4853f01811b12b1fb0545bd39f5dcbbeedc
     home: https://github.com/prometheus-operator/kube-prometheus
-    icon: /assets/icon/kube-prometheus-stack-icon.png
+    icon: https://github.com/OpenSourceConsulting/playcekube-charts/blob/v2.1.0/assets/icon/kube-prometheus-stack-icon.png
     keywords:
     - monitoring
     - infrastructure
@@ -1041,16 +1044,16 @@ entries:
       catalog.cattle.io/release-name: linkerd-control-plane
     apiVersion: v2
     appVersion: stable-2.14.9
-    created: "2024-07-18T17:41:11.771898799+09:00"
+    created: "2024-07-18T17:54:07.670690047+09:00"
     dependencies:
     - name: partials
       repository: file://../partials
       version: 0.1.0
     description: 'Linkerd gives you observability, reliability, and security for your
       microservices — with no code change required. '
-    digest: 69024b3735ca16f0eb18563527fd62c9a918861d11552b4b7d6016fccec0790d
+    digest: 9334e125a8d9bf5cecf07cb277c16296d923bdd430c2908cff6143abeb06661c
     home: https://linkerd.io
-    icon: /assets/icon/linkerd-control-plane-icon.png
+    icon: https://github.com/OpenSourceConsulting/playcekube-charts/blob/v2.1.0/assets/icon/linkerd-control-plane-icon.png
     keywords:
     - networking
     - monitoring
@@ -1070,16 +1073,16 @@ entries:
     version: 1.16.10
   linkerd-crds:
   - apiVersion: v2
-    created: "2024-07-18T17:41:11.778866017+09:00"
+    created: "2024-07-18T17:54:07.67665699+09:00"
     dependencies:
     - name: partials
       repository: file://../partials
       version: 0.1.0
     description: 'Linkerd gives you observability, reliability, and security for your
       microservices — with no code change required. '
-    digest: 621e415bfe0fbf0549acb3fc2e7177ffe399f059f2ea336f1fdf8016eb402e26
+    digest: 28377dd9640aaa8e303abcf813f7ff5d7b6fcbfa80e347cd22ff94e543613458
     home: https://linkerd.io
-    icon: /assets/icon/linkerd-crds-icon.png
+    icon: https://github.com/OpenSourceConsulting/playcekube-charts/blob/v2.1.0/assets/icon/linkerd-crds-icon.png
     keywords:
     - service-mesh
     kubeVersion: '>=1.21.0-0'
@@ -1101,16 +1104,16 @@ entries:
       catalog.cattle.io/release-name: linkerd-jaeger
     apiVersion: v1
     appVersion: stable-2.11.1
-    created: "2024-07-18T17:41:11.781512823+09:00"
+    created: "2024-07-18T17:54:07.678365532+09:00"
     dependencies:
     - name: partials
       repository: file://../../../charts/partials
       version: 0.1.0
     description: 'The Linkerd-Jaeger extension adds distributed tracing to Linkerd
       using OpenCensus and Jaeger. '
-    digest: a911d94ade37917608dbb06d770f9f27271bb628fccb53f47bd19fe1af1d0d2c
+    digest: 52dd2af3833c75776cc98d1aa19b3c0b742aa310b1619cf5ee5da4101e1341e7
     home: https://linkerd.io
-    icon: /assets/icon/linkerd-jaeger-icon.png
+    icon: https://github.com/OpenSourceConsulting/playcekube-charts/blob/v2.1.0/assets/icon/linkerd-jaeger-icon.png
     keywords:
     - networking
     - monitoring
@@ -1134,16 +1137,16 @@ entries:
       catalog.cattle.io/release-name: linkerd-multicluster
     apiVersion: v1
     appVersion: stable-2.11.1
-    created: "2024-07-18T17:41:11.783991095+09:00"
+    created: "2024-07-18T17:54:07.679795353+09:00"
     dependencies:
     - name: partials
       repository: file://../../../charts/partials
       version: 0.1.0
     description: 'The Linkerd-Multicluster extension contains resources to support
       multicluster linking to remote clusters '
-    digest: 79366fb11a5cb99e91cff667923710b79632b4e4f5ee12f0b65d6f38f22d93fc
+    digest: 58deebbe0e373bfd6a902d292fdb8891837000482a6a5e63aa7fa1f7861f52ce
     home: https://linkerd.io
-    icon: /assets/icon/linkerd-multicluster-icon.png
+    icon: https://github.com/OpenSourceConsulting/playcekube-charts/blob/v2.1.0/assets/icon/linkerd-multicluster-icon.png
     keywords:
     - networking
     - monitoring
@@ -1167,16 +1170,16 @@ entries:
       catalog.cattle.io/release-name: linkerd-viz
     apiVersion: v1
     appVersion: stable-2.14.9
-    created: "2024-07-18T17:41:11.793693198+09:00"
+    created: "2024-07-18T17:54:07.685543005+09:00"
     dependencies:
     - name: partials
       repository: file://../../../charts/partials
       version: 0.1.0
     description: 'The Linkerd-Viz extension contains observability and visualization
       components for Linkerd. '
-    digest: 1f1f723a7b9aadb13f72aa0163e305baa647ac7738dcfbd5ae4c469c17574cfd
+    digest: 97f92625c07ed6ec411fa837cb4da290d5bc9de19541a9705c67a2d01fc8fd21
     home: https://linkerd.io
-    icon: /assets/icon/linkerd-viz-icon.png
+    icon: https://github.com/OpenSourceConsulting/playcekube-charts/blob/v2.1.0/assets/icon/linkerd-viz-icon.png
     keywords:
     - networking
     - monitoring
@@ -1199,16 +1202,16 @@ entries:
       catalog.cattle.io/release-name: linkerd-viz
     apiVersion: v1
     appVersion: stable-2.11.1
-    created: "2024-07-18T17:41:11.788541392+09:00"
+    created: "2024-07-18T17:54:07.682527995+09:00"
     dependencies:
     - name: partials
       repository: file://../../../charts/partials
       version: 0.1.0
     description: 'The Linkerd-Viz extension contains observability and visualization
       components for Linkerd. '
-    digest: 6565addf7ad35eed837d3eda60deb4867bfd1c7565e4c1b95abd3815bdb53994
+    digest: d9b5e750956f0cdeb14f1e958d7119a28b7fa5a3facf9f12130fbbe688251bf7
     home: https://linkerd.io
-    icon: /assets/icon/linkerd-viz-icon.png
+    icon: https://github.com/OpenSourceConsulting/playcekube-charts/blob/v2.1.0/assets/icon/linkerd-viz-icon.png
     keywords:
     - networking
     - monitoring
@@ -1241,12 +1244,12 @@ entries:
       catalog.cattle.io/release-name: metrics-server
     apiVersion: v2
     appVersion: 0.6.4
-    created: "2024-07-18T17:41:11.610045808+09:00"
+    created: "2024-07-18T17:54:07.479218915+09:00"
     description: Metrics Server is a scalable, efficient source of container resource
       metrics for Kubernetes built-in autoscaling pipelines.
-    digest: ba99bf48b9d60b17d0e792496db03c75a79f3efe4bfeb4ab6c138a34272d3231
+    digest: 897e763d93ee7fe31b101abe41d2b79dc0876ce00f8e8e6745b5f0207ed9b8ff
     home: https://github.com/kubernetes-sigs/metrics-server
-    icon: /assets/icon/metrics-server-icon.icon
+    icon: https://github.com/OpenSourceConsulting/playcekube-charts/blob/v2.1.0/assets/icon/metrics-server-icon.icon
     keywords:
     - monitoring
     - infrastructure
@@ -1276,12 +1279,12 @@ entries:
       catalog.cattle.io/release-name: metrics-server
     apiVersion: v2
     appVersion: 0.6.1
-    created: "2024-07-18T17:41:11.611492006+09:00"
+    created: "2024-07-18T17:54:07.480612667+09:00"
     description: Metrics Server is a scalable, efficient source of container resource
       metrics for Kubernetes built-in autoscaling pipelines.
-    digest: 53bc016fe993eed1aa76b1138df0a89f74501e05c59267720f54d5c7fd628791
+    digest: dc03e5b8c19301eddf3e0577f6be555bfeaa1bcdc28a4a6f9676e08a3ae9153f
     home: https://github.com/kubernetes-sigs/metrics-server
-    icon: /assets/icon/metrics-server-icon.icon
+    icon: https://github.com/OpenSourceConsulting/playcekube-charts/blob/v2.1.0/assets/icon/metrics-server-icon.icon
     keywords:
     - monitoring
     - infrastructure
@@ -1309,11 +1312,11 @@ entries:
       catalog.cattle.io/release-name: minio
     apiVersion: v1
     appVersion: RELEASE.2022-05-08T23-50-31Z
-    created: "2024-07-18T17:41:11.798291917+09:00"
+    created: "2024-07-18T17:54:07.68811826+09:00"
     description: Multi-Cloud Object Storage
-    digest: f96eeed82bb7a978e12265b4ce6c60f4c08a0c750dd5c681abf637f4016f20d1
+    digest: 7263245eaf46ed59ba476340a77d8fef0b8b9e8740305fcfbc15800608d98621
     home: https://min.io
-    icon: /assets/icon/minio-icon.png
+    icon: https://github.com/OpenSourceConsulting/playcekube-charts/blob/v2.1.0/assets/icon/minio-icon.png
     keywords:
     - infrastructure
     - minio
@@ -1343,7 +1346,7 @@ entries:
       catalog.cattle.io/release-name: oauth2-proxy
     apiVersion: v2
     appVersion: 7.5.1
-    created: "2024-07-18T17:41:11.82128546+09:00"
+    created: "2024-07-18T17:54:07.713735729+09:00"
     dependencies:
     - alias: redis
       condition: redis.enabled
@@ -1352,8 +1355,9 @@ entries:
       version: ~18.5.0
     description: A reverse proxy that provides authentication with Google, Github
       or other providers
-    digest: 98d7ad197c5b9d979f1701378e8e9344cfa855cea3edb15a926c040e342f24e9
+    digest: f6a1c467e39049e5e92c93aa63a0b17dde20b44c6f19856571126b4fa9e9eda2
     home: https://oauth2-proxy.github.io/oauth2-proxy/
+    icon: https://github.com/OpenSourceConsulting/playcekube-charts/blob/v2.1.0null
     keywords:
     - security
     - infrastructure
@@ -1388,7 +1392,7 @@ entries:
       catalog.cattle.io/release-name: oauth2-proxy
     apiVersion: v2
     appVersion: 7.2.0
-    created: "2024-07-18T17:41:11.810419457+09:00"
+    created: "2024-07-18T17:54:07.698435359+09:00"
     dependencies:
     - alias: redis
       condition: redis.enabled
@@ -1397,8 +1401,9 @@ entries:
       version: ~16.4.0
     description: A reverse proxy that provides authentication with Google, Github
       or other providers
-    digest: db1e784dd822db6a0a1b47b9dad854a1274c6e51f3235c03e99bdd2fe783329d
+    digest: 052fc077557fa939a75d50f7eb722ce994c3ff5f0438c02f55742c7c93f3d67a
     home: https://oauth2-proxy.github.io/oauth2-proxy/
+    icon: https://github.com/OpenSourceConsulting/playcekube-charts/blob/v2.1.0null
     keywords:
     - security
     - infrastructure
@@ -1434,9 +1439,10 @@ entries:
       catalog.cattle.io/release-name: opendistro-es
     apiVersion: v1
     appVersion: 1.13.3
-    created: "2024-07-18T17:41:11.827332491+09:00"
+    created: "2024-07-18T17:54:07.721919224+09:00"
     description: Open Distro for Elasticsearch
-    digest: 16fc059cce45537a7010368dd1542e4f2dd0acc8ffa70a422f3fcabd90b8ed74
+    digest: ca362f69c88245977e24bd31f8624fa417ce5995a8bfeb442c740b03fd76a713
+    icon: https://github.com/OpenSourceConsulting/playcekube-charts/blob/v2.1.0null
     keywords:
     - logging
     - monitoring
@@ -1460,14 +1466,15 @@ entries:
       catalog.cattle.io/release-name: opensearch
     apiVersion: v2
     appVersion: 2.9.0
-    created: "2024-07-18T17:41:11.837139474+09:00"
+    created: "2024-07-18T17:54:07.730388191+09:00"
     dependencies:
     - condition: fluent-bit.enabled
       name: fluent-bit
       repository: ""
     description: A Helm chart for OpenSearch
-    digest: 642cd8bac32fc167b4453b99a4a50afe3b97b1eb91edbae52415272645454593
+    digest: 8f1038a771eb08d636c11ad788d2d8d319a121430d054f2aa58185340a573693
     home: https://opensearch.org
+    icon: https://github.com/OpenSourceConsulting/playcekube-charts/blob/v2.1.0null
     keywords:
     - logging
     - monitoring
@@ -1518,7 +1525,7 @@ entries:
       catalog.cattle.io/release-name: sonarqube
     apiVersion: v2
     appVersion: 10.4.0
-    created: "2024-07-18T17:41:12.253607377+09:00"
+    created: "2024-07-18T17:54:08.146118072+09:00"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -1534,9 +1541,9 @@ entries:
       you perform continuous code inspections of your projects. The tool analyses
       30+ different programming languages and integrates into your CI pipeline and
       DevOps platform to ensure that your code meets high-quality standards.
-    digest: e90942ffea57e5d26be5b14179d8a6b0cb89cbe5e37277c137a77ca8872b7e5b
+    digest: ea15cbece4899ac74ed733c604ff091274a80e0bda1eff0a94c8d14d61b69058
     home: https://www.sonarqube.org/
-    icon: /assets/icon/sonarqube-icon.svg
+    icon: https://github.com/OpenSourceConsulting/playcekube-charts/blob/v2.1.0/assets/icon/sonarqube-icon.svg
     keywords:
     - develops
     - coverage
@@ -1586,7 +1593,7 @@ entries:
       catalog.cattle.io/release-name: sonarqube
     apiVersion: v2
     appVersion: 9.9.0
-    created: "2024-07-18T17:41:12.268595277+09:00"
+    created: "2024-07-18T17:54:08.163771633+09:00"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -1599,9 +1606,9 @@ entries:
     description: SonarQube offers Code Quality and Code Security analysis for up to
       27 languages. Find Bugs, Vulnerabilities, Security Hotspots and Code Smells
       throughout your workflow.
-    digest: 892d3130b87df7708220204839d5870768500be98b606c6284291fad974b7a2f
+    digest: 47cbea2b7bf72efd3545820ca9103f85a753cc86b1e3f1c7fe60f2310ddfeee2
     home: https://www.sonarqube.org/
-    icon: /assets/icon/sonarqube-icon.svg
+    icon: https://github.com/OpenSourceConsulting/playcekube-charts/blob/v2.1.0/assets/icon/sonarqube-icon.svg
     keywords:
     - develops
     - coverage
@@ -1631,13 +1638,14 @@ entries:
       catalog.cattle.io/release-name: tekton-pipeline
     apiVersion: v2
     appVersion: v0.32.1
-    created: "2024-07-18T17:41:12.270496587+09:00"
+    created: "2024-07-18T17:54:08.166451394+09:00"
     dependencies:
     - condition: tekton-triggers.enabled
       name: tekton-triggers
       repository: ""
     description: A Helm chart for tekton-pipeline
-    digest: b4183cdac51633c8a998529104dba49df4e10fe30f700a8b26b2ba178e1b573b
+    digest: 729dbf15b830b93fd939c05211e744657928c35be25c9ec3bce466fdb8131ab1
+    icon: https://github.com/OpenSourceConsulting/playcekube-charts/blob/v2.1.0null
     keywords:
     - develops
     name: tekton-pipeline
@@ -1652,11 +1660,11 @@ entries:
       catalog.cattle.io/release-name: velero
     apiVersion: v2
     appVersion: 1.9.0
-    created: "2024-07-18T17:41:11.840102436+09:00"
+    created: "2024-07-18T17:54:07.733818199+09:00"
     description: A Helm chart for velero
-    digest: 1c8e2e027c2cdb04e22faa8efe95f2b3b78a3291a080dc7ae562930772b52ead
+    digest: d5173661cd5455f7e3b9e36e33f2e3b1aebaa7492ce6bf3d7be69b5322918a57
     home: https://github.com/vmware-tanzu/velero
-    icon: /assets/icon/velero-icon.png
+    icon: https://github.com/OpenSourceConsulting/playcekube-charts/blob/v2.1.0/assets/icon/velero-icon.png
     keywords:
     - infrastructure
     kubeVersion: '>=1.16.0-0'
@@ -1675,4 +1683,4 @@ entries:
     urls:
     - playcekube/velero-2.30.1.tgz
     version: 2.30.1
-generated: "2024-07-18T17:41:11.607436598+09:00"
+generated: "2024-07-18T17:54:07.477183037+09:00"
