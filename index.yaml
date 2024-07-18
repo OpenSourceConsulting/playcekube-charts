@@ -1,0 +1,1678 @@
+apiVersion: v1
+entries:
+  argo-cd:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: added
+          description: Support Azure DevOps webhook Secret
+      artifacthub.io/signKey: |
+        fingerprint: 2B8F22F57260EFA67BE1C5824B11F800CD9D2252
+        url: https://argoproj.github.io/argo-helm/pgp_keys.asc
+      catalog.cattle.io/certified: playcekube
+      catalog.cattle.io/namespace: playcekube-dev
+      catalog.cattle.io/release-name: argo-cd
+    apiVersion: v2
+    appVersion: v2.9.5
+    created: "2024-07-18T15:13:25.564940912+09:00"
+    dependencies:
+    - condition: redis-ha.enabled
+      name: redis-ha
+      repository: https://dandydeveloper.github.io/charts/
+      version: 4.23.0
+    description: A Helm chart for Argo CD, a declarative, GitOps continuous delivery
+      tool for Kubernetes.
+    digest: 7c4efe1ba89b56d2e66837337357fb3c8e275e21c17ac19270f0c6eb2c229301
+    home: https://github.com/argoproj/argo-helm
+    icon: https://argo-cd.readthedocs.io/en/stable/assets/logo.png
+    keywords:
+    - develops
+    - argoproj
+    - argocd
+    - gitops
+    kubeVersion: '>=1.23.0-0'
+    maintainers:
+    - name: argoproj
+      url: https://argoproj.github.io/
+    name: argo-cd
+    sources:
+    - https://github.com/argoproj/argo-helm/tree/main/charts/argo-cd
+    - https://github.com/argoproj/argo-cd
+    urls:
+    - playcekube-dev/argo-cd-5.53.4.tgz
+    version: 5.53.4
+  - annotations:
+      artifacthub.io/changes: |
+        - "[Changed]: Update ArgoCD to v2.5.4"
+      catalog.cattle.io/certified: playcekube
+      catalog.cattle.io/namespace: playcekube-dev
+      catalog.cattle.io/release-name: argo-cd
+    apiVersion: v2
+    appVersion: v2.5.4
+    created: "2024-07-18T15:13:25.544691091+09:00"
+    dependencies:
+    - condition: redis-ha.enabled
+      name: redis-ha
+      repository: https://dandydeveloper.github.io/charts/
+      version: 4.22.3
+    description: A Helm chart for Argo CD, a declarative, GitOps continuous delivery
+      tool for Kubernetes.
+    digest: cfe3dad195d736e5c830ddc0dd9d39710dd399fd2519396c6a8e1aa86e763161
+    home: https://github.com/argoproj/argo-helm
+    icon: https://argo-cd.readthedocs.io/en/stable/assets/logo.png
+    keywords:
+    - develops
+    - argoproj
+    - argocd
+    - gitops
+    kubeVersion: '>=1.22.0-0'
+    maintainers:
+    - name: argoproj
+      url: https://argoproj.github.io/
+    name: argo-cd
+    sources:
+    - https://github.com/argoproj/argo-helm/tree/main/charts/argo-cd
+    - https://github.com/argoproj/argo-cd
+    urls:
+    - playcekube-dev/argo-cd-5.16.2.tgz
+    version: 5.16.2
+  - annotations:
+      artifacthub.io/changes: |
+        - [Changed]: Update redis-ha dependency for better configuration options
+      catalog.cattle.io/certified: playcekube
+      catalog.cattle.io/namespace: playcekube-dev
+      catalog.cattle.io/release-name: argo-cd
+    apiVersion: v2
+    appVersion: v2.4.3
+    created: "2024-07-18T15:13:25.523590701+09:00"
+    dependencies:
+    - condition: redis-ha.enabled
+      name: redis-ha
+      repository: https://dandydeveloper.github.io/charts/
+      version: 4.17.1
+    description: A Helm chart for Argo CD, a declarative, GitOps continuous delivery
+      tool for Kubernetes.
+    digest: 1a56e2d4eac4e15d70bf893fb13d9e74c355d2d4fd81062f3f130fe65194adf6
+    home: https://github.com/argoproj/argo-helm
+    icon: https://argo-cd.readthedocs.io/en/stable/assets/logo.png
+    keywords:
+    - develops
+    - argoproj
+    - argocd
+    - gitops
+    maintainers:
+    - name: alexec
+    - name: alexmt
+    - name: jessesuen
+    - name: seanson
+    name: argo-cd
+    urls:
+    - playcekube-dev/argo-cd-4.9.11.tgz
+    version: 4.9.11
+  argo-events:
+  - annotations:
+      artifacthub.io/changes: |
+        - "[Fixed]: Fixed selectorLabel of ServiceMonitor that doesn't match metrics Service"
+      catalog.cattle.io/certified: playcekube
+      catalog.cattle.io/namespace: playcekube-dev
+      catalog.cattle.io/release-name: argo-events
+    apiVersion: v2
+    appVersion: v1.7.1
+    created: "2024-07-18T15:13:25.567013733+09:00"
+    description: A Helm chart for Argo Events, the event-driven workflow automation
+      framework
+    digest: 40853726b4d3cb16548cc00189729070b8c89fdcf367658980c6b5160991e0ff
+    home: https://github.com/argoproj/argo-helm
+    icon: https://argoproj.github.io/argo-events/assets/logo.png
+    keywords:
+    - develops
+    - argoproj
+    - argo-events
+    maintainers:
+    - name: pdrastil
+    - name: VaibhavPage
+    - name: whynowy
+    name: argo-events
+    sources:
+    - https://github.com/argoproj/argo-events
+    urls:
+    - playcekube-dev/argo-events-2.0.3.tgz
+    version: 2.0.3
+  argo-rollouts:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: added
+          description: Added Gloo Platform provider RBAC rules
+      artifacthub.io/signKey: |
+        fingerprint: 2B8F22F57260EFA67BE1C5824B11F800CD9D2252
+        url: https://argoproj.github.io/argo-helm/pgp_keys.asc
+      catalog.cattle.io/certified: playcekube
+      catalog.cattle.io/namespace: playcekube-dev
+      catalog.cattle.io/release-name: argo-rollouts
+    apiVersion: v2
+    appVersion: v1.6.4
+    created: "2024-07-18T15:13:25.580117229+09:00"
+    description: A Helm chart for Argo Rollouts
+    digest: 18c2aff2e20e34271da227fb766675877e3b918b92ad89b49307b27bae9ba88c
+    home: https://github.com/argoproj/argo-helm
+    icon: https://argoproj.github.io/argo-rollouts/assets/logo.png
+    keywords:
+    - develops
+    - argoproj
+    - argo-rollouts
+    maintainers:
+    - name: argoproj
+      url: https://argoproj.github.io/
+    name: argo-rollouts
+    sources:
+    - https://github.com/argoproj/argo-rollouts
+    urls:
+    - playcekube-dev/argo-rollouts-2.34.1.tgz
+    version: 2.34.1
+  - annotations:
+      artifacthub.io/changes: |
+        - "[Added]: Additional manifests to deploy within the chart"
+      catalog.cattle.io/certified: playcekube
+      catalog.cattle.io/namespace: playcekube-dev
+      catalog.cattle.io/release-name: argo-rollouts
+    apiVersion: v2
+    appVersion: v1.2.0
+    created: "2024-07-18T15:13:25.571349421+09:00"
+    description: A Helm chart for Argo Rollouts
+    digest: a86ca78ff391677925c8773a0cc890d8b0a4a01dccd26bbf9fef5ee56bcf1b0d
+    home: https://github.com/argoproj/argo-helm
+    icon: https://argoproj.github.io/argo-rollouts/assets/logo.png
+    keywords:
+    - develops
+    maintainers:
+    - name: alexmt
+    - name: dthomson25
+    - name: jessesuen
+    name: argo-rollouts
+    urls:
+    - playcekube-dev/argo-rollouts-2.18.0.tgz
+    version: 2.18.0
+  csi-driver-nfs:
+  - annotations:
+      catalog.cattle.io/certified: playcekube
+      catalog.cattle.io/namespace: playcekube
+      catalog.cattle.io/release-name: csi-driver-nfs
+    apiVersion: v1
+    appVersion: v4.5.0
+    created: "2024-07-18T15:13:25.270042516+09:00"
+    description: CSI NFS Driver for Kubernetes
+    digest: 380209014f5d01a6c185cc18cc25683d738eac1925a677e77c1b7d4c0a658432
+    keywords:
+    - storage
+    - infrastructure
+    name: csi-driver-nfs
+    urls:
+    - playcekube/csi-driver-nfs-v4.5.0.tgz
+    version: v4.5.0
+  - annotations:
+      catalog.cattle.io/certified: playcekube
+      catalog.cattle.io/namespace: playcekube
+      catalog.cattle.io/release-name: csi-driver-nfs
+    apiVersion: v1
+    appVersion: v4.4.0
+    created: "2024-07-18T15:13:25.268626315+09:00"
+    description: CSI NFS Driver for Kubernetes
+    digest: e1f61f51037cde85ad10b25b9b4fecedfc0ea714384aa8ce23f0bd18d9dbf60f
+    keywords:
+    - storage
+    - infrastructure
+    name: csi-driver-nfs
+    urls:
+    - playcekube/csi-driver-nfs-v4.4.0.tgz
+    version: v4.4.0
+  - annotations:
+      catalog.cattle.io/certified: playcekube
+      catalog.cattle.io/namespace: playcekube
+      catalog.cattle.io/release-name: csi-driver-nfs
+    apiVersion: v1
+    appVersion: v4.0.0
+    created: "2024-07-18T15:13:25.267168023+09:00"
+    description: CSI NFS Driver for Kubernetes
+    digest: 96dcb92f935dda74ba174a918af7df2a054ad6ea03493486aee99c7021ae6d0b
+    keywords:
+    - storage
+    - infrastructure
+    name: csi-driver-nfs
+    urls:
+    - playcekube/csi-driver-nfs-v4.0.0.tgz
+    version: v4.0.0
+  gatekeeper:
+  - annotations:
+      catalog.cattle.io/certified: playcekube
+      catalog.cattle.io/namespace: playcekube
+      catalog.cattle.io/release-name: gatekeeper
+    apiVersion: v2
+    appVersion: v3.11.0
+    created: "2024-07-18T15:13:25.275306992+09:00"
+    description: A Helm chart for Gatekeeper
+    digest: 1aa9fab48f0bb3a5f9654a0111620a296e277e47596fbf3355f53dee73382f53
+    home: https://github.com/open-policy-agent/gatekeeper
+    icon: https://open-policy-agent.github.io/gatekeeper/website/img/logo.svg
+    keywords:
+    - security
+    - infrastructure
+    - open policy agent
+    name: gatekeeper
+    sources:
+    - https://github.com/open-policy-agent/gatekeeper.git
+    urls:
+    - playcekube/gatekeeper-3.11.0.tgz
+    version: 3.11.0
+  gitea:
+  - annotations:
+      catalog.cattle.io/certified: playcekube
+      catalog.cattle.io/namespace: playcekube-dev
+      catalog.cattle.io/release-name: gitea
+    apiVersion: v2
+    appVersion: 1.21.3
+    created: "2024-07-18T15:13:25.622172323+09:00"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 13.2.24
+    - condition: postgresql-ha.enabled
+      name: postgresql-ha
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 12.3.3
+    - condition: redis-cluster.enabled
+      name: redis-cluster
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 9.1.3
+    description: Gitea Helm chart for Kubernetes
+    digest: 8bad66e210122211413d1deea7b0a5112a1cf7adbae0cb4cb50f963d6eecc17e
+    icon: https://gitea.com/assets/img/logo.svg
+    keywords:
+    - develops
+    - git
+    - issue tracker
+    - code review
+    - wiki
+    - gitea
+    - gogs
+    maintainers:
+    - email: charlie@charliedrage.com
+      name: Charlie Drage
+    - email: maintainers@gitea.io
+      name: Gitea Authors
+    - email: konrad.lother@novum-rgi.de
+      name: Konrad Lother
+    - email: lucas.hahn@novum-rgi.de
+      name: Lucas Hahn
+    - email: sk.bunsenbrenner@gmail.com
+      name: Steven Kriegler
+    - email: patrick.schratz@gmail.com
+      name: Patrick Schratz
+    name: gitea
+    sources:
+    - https://gitea.com/gitea/helm-chart
+    - https://github.com/go-gitea/gitea
+    - https://hub.docker.com/r/gitea/gitea/
+    type: application
+    urls:
+    - playcekube-dev/gitea-10.0.2.tgz
+    version: 10.0.2
+  - annotations:
+      catalog.cattle.io/certified: playcekube
+      catalog.cattle.io/namespace: playcekube-dev
+      catalog.cattle.io/release-name: gitea
+    apiVersion: v2
+    appVersion: 1.16.8
+    created: "2024-07-18T15:13:25.643012024+09:00"
+    dependencies:
+    - condition: memcached.enabled
+      name: memcached
+      repository: https://raw.githubusercontent.com/bitnami/charts/eb5f9a9513d987b519f0ecd732e7031241c50328/bitnami
+      version: 5.9.0
+    - condition: mysql.enabled
+      name: mysql
+      repository: https://raw.githubusercontent.com/bitnami/charts/eb5f9a9513d987b519f0ecd732e7031241c50328/bitnami
+      version: 6.14.10
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://raw.githubusercontent.com/bitnami/charts/eb5f9a9513d987b519f0ecd732e7031241c50328/bitnami
+      version: 10.3.17
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://raw.githubusercontent.com/bitnami/charts/eb5f9a9513d987b519f0ecd732e7031241c50328/bitnami
+      version: 9.3.6
+    description: Gitea Helm chart for Kubernetes
+    digest: 2a8b192614d05c43fed6980ee9a938078022b85018a340f5b4a843547862f0b2
+    icon: https://docs.gitea.io/images/gitea.png
+    keywords:
+    - develops
+    - git
+    - issue tracker
+    - code review
+    - wiki
+    - gitea
+    - gogs
+    maintainers:
+    - email: charlie@charliedrage.com
+      name: Charlie Drage
+    - email: maintainers@gitea.io
+      name: Gitea Authors
+    - email: konrad.lother@novum-rgi.de
+      name: Konrad Lother
+    - email: lucas.hahn@novum-rgi.de
+      name: Lucas Hahn
+    - email: sk.bunsenbrenner@gmail.com
+      name: Steven Kriegler
+    name: gitea
+    sources:
+    - https://gitea.com/gitea/helm-chart
+    - https://github.com/go-gitea/gitea
+    - https://hub.docker.com/r/gitea/gitea/
+    type: application
+    urls:
+    - playcekube-dev/gitea-5.0.9.tgz
+    version: 5.0.9
+  gitlab:
+  - annotations:
+      catalog.cattle.io/certified: playcekube
+      catalog.cattle.io/namespace: playcekube-dev
+      catalog.cattle.io/release-name: gitlab
+    apiVersion: v1
+    appVersion: v16.8.0
+    created: "2024-07-18T15:13:25.814424205+09:00"
+    dependencies:
+    - name: gitlab
+      repository: ""
+      version: '*.*.*'
+    - name: certmanager-issuer
+      repository: ""
+      version: '*.*.*'
+    - name: minio
+      repository: ""
+      version: '*.*.*'
+    - name: registry
+      repository: ""
+      version: '*.*.*'
+    - alias: certmanager
+      condition: certmanager.install
+      name: cert-manager
+      repository: https://charts.jetstack.io/
+      version: 1.12.7
+    - condition: prometheus.install
+      name: prometheus
+      repository: https://prometheus-community.github.io/helm-charts
+      version: 15.18.0
+    - condition: postgresql.install
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 12.5.2
+    - condition: gitlab-runner.install
+      name: gitlab-runner
+      repository: https://charts.gitlab.io/
+      version: 0.60.0
+    - condition: redis.install
+      name: redis
+      repository: https://charts.bitnami.com/bitnami
+      version: 16.13.2
+    - condition: nginx-ingress.enabled
+      name: nginx-ingress
+      repository: ""
+      version: '*.*.*'
+    - alias: nginx-ingress-geo
+      condition: nginx-ingress-geo.enabled
+      name: nginx-ingress
+      repository: ""
+      version: '*.*.*'
+    - condition: gitlab-zoekt.install
+      name: gitlab-zoekt
+      repository: https://charts.gitlab.io/
+      version: 1.0.0
+    - condition: traefik.install
+      name: traefik
+      repository: https://helm.traefik.io/traefik
+      version: 10.19.4
+    - alias: haproxy
+      condition: haproxy.install
+      name: kubernetes-ingress
+      repository: https://haproxytech.github.io/helm-charts
+      version: 1.32.0
+    description: GitLab is the most comprehensive AI-powered DevSecOps Platform.
+    digest: 220b798580702db55290a845209316257a6e0313a15443ce71a150293bafc026
+    home: https://about.gitlab.com/
+    icon: https://gitlab.com/gitlab-com/gitlab-artwork/raw/master/logo/logo-square.png
+    keywords:
+    - gitlab
+    - develops
+    maintainers:
+    - email: support@gitlab.com
+      name: GitLab Inc.
+    name: gitlab
+    sources:
+    - https://gitlab.com/gitlab-org/charts/gitlab
+    urls:
+    - playcekube-dev/gitlab-7.8.0.tgz
+    version: 7.8.0
+  - annotations:
+      catalog.cattle.io/certified: playcekube
+      catalog.cattle.io/namespace: playcekube-dev
+      catalog.cattle.io/release-name: gitlab
+    apiVersion: v1
+    appVersion: 15.1.1
+    created: "2024-07-18T15:13:25.723009141+09:00"
+    dependencies:
+    - name: gitlab
+      repository: ""
+      version: '*.*.*'
+    - name: certmanager-issuer
+      repository: ""
+      version: '*.*.*'
+    - name: minio
+      repository: ""
+      version: '*.*.*'
+    - name: registry
+      repository: ""
+      version: '*.*.*'
+    - alias: certmanager
+      condition: certmanager.install
+      name: cert-manager
+      repository: https://charts.jetstack.io/
+      version: 1.5.4
+    - condition: prometheus.install
+      name: prometheus
+      repository: https://prometheus-community.github.io/helm-charts
+      version: 15.0.4
+    - condition: postgresql.install
+      name: postgresql
+      repository: https://raw.githubusercontent.com/bitnami/charts/eb5f9a9513d987b519f0ecd732e7031241c50328/bitnami
+      version: 8.9.4
+    - condition: gitlab-runner.install
+      name: gitlab-runner
+      repository: https://charts.gitlab.io/
+      version: 0.41.0
+    - condition: global.grafana.enabled
+      name: grafana
+      repository: https://grafana.github.io/helm-charts
+      version: 6.9.1
+    - condition: redis.install
+      name: redis
+      repository: https://raw.githubusercontent.com/bitnami/charts/eb5f9a9513d987b519f0ecd732e7031241c50328/bitnami
+      version: 11.3.4
+    - condition: nginx-ingress.enabled
+      name: nginx-ingress
+      repository: ""
+      version: '*.*.*'
+    description: The One DevOps Platform
+    digest: 115a4b4946d21c1ad93ab7cd3203260a260a77ee92c4a2df3038a37e8d8b7b2f
+    home: https://about.gitlab.com/
+    icon: https://gitlab.com/gitlab-com/gitlab-artwork/raw/master/logo/logo-square.png
+    keywords:
+    - develops
+    - gitlab
+    maintainers:
+    - email: support@gitlab.com
+      name: GitLab Inc.
+    name: gitlab
+    sources:
+    - https://gitlab.com/gitlab-org/charts/gitlab
+    urls:
+    - playcekube-dev/gitlab-6.1.1.tgz
+    version: 6.1.1
+  harbor:
+  - annotations:
+      catalog.cattle.io/certified: playcekube
+      catalog.cattle.io/namespace: playcekube-dev
+      catalog.cattle.io/release-name: harbor
+      category: Infrastructure
+      images: |
+        - name: harbor-adapter-trivy
+          image: docker.io/bitnami/harbor-adapter-trivy:2.10.0-debian-11-r0
+        - name: harbor-core
+          image: docker.io/bitnami/harbor-core:2.10.0-debian-11-r0
+        - name: harbor-exporter
+          image: docker.io/bitnami/harbor-exporter:2.10.0-debian-11-r0
+        - name: harbor-jobservice
+          image: docker.io/bitnami/harbor-jobservice:2.10.0-debian-11-r0
+        - name: harbor-registry
+          image: docker.io/bitnami/harbor-registry:2.10.0-debian-11-r0
+        - name: harbor-registryctl
+          image: docker.io/bitnami/harbor-registryctl:2.10.0-debian-11-r0
+        - name: harbor-portal
+          image: docker.io/bitnami/harbor-portal:2.10.0-debian-11-r1
+        - name: nginx
+          image: docker.io/bitnami/nginx:1.25.3-debian-11-r2
+        - name: os-shell
+          image: docker.io/bitnami/os-shell:11-debian-11-r92
+        - name: postgresql
+          image: docker.io/bitnami/postgresql:13.13.0-debian-11-r16
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 2.10.0
+    created: "2024-07-18T15:13:25.884218927+09:00"
+    dependencies:
+    - condition: redis.enabled
+      name: redis
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 18.x.x
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 13.x.x
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Harbor is an open source trusted cloud-native registry to store,
+      sign, and scan content. It adds functionalities like security, identity, and
+      management to the open source Docker distribution.
+    digest: 4b804e5b669b54b9b1af108509983475ae562afd03be5928612d77bfefaddf0d
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/harbor-core/img/harbor-core-stack-220x234.png
+    keywords:
+    - develops
+    - docker
+    - registry
+    - vulnerability
+    - scan
+    maintainers:
+    - name: VMware, Inc.
+      url: https://github.com/bitnami/charts
+    name: harbor
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/harbor
+    urls:
+    - playcekube-dev/harbor-19.3.0.tgz
+    version: 19.3.0
+  - annotations:
+      catalog.cattle.io/certified: playcekube
+      catalog.cattle.io/namespace: playcekube-dev
+      catalog.cattle.io/release-name: harbor
+      category: Infrastructure
+    apiVersion: v2
+    appVersion: 2.5.2
+    created: "2024-07-18T15:13:25.849246797+09:00"
+    dependencies:
+    - condition: redis.enabled
+      name: redis
+      repository: https://charts.bitnami.com/bitnami
+      version: 16.x.x
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.x.x
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      version: 1.x.x
+    description: Harbor is an open source trusted cloud-native registry to store,
+      sign, and scan content. It adds functionalities like security, identity, and
+      management to the open source Docker distribution.
+    digest: 6f7eb7b88e26b1d01c1512587c28d57af41e04f274fb72a0bc96b2375aaaf3df
+    home: https://github.com/bitnami/charts/tree/master/bitnami/harbor
+    icon: https://bitnami.com/assets/stacks/harbor-core/img/harbor-core-stack-220x234.png
+    keywords:
+    - develops
+    - docker
+    - registry
+    - vulnerability
+    - scan
+    maintainers:
+    - name: Bitnami
+      url: https://github.com/bitnami/charts
+    name: harbor
+    sources:
+    - https://github.com/bitnami/bitnami-docker-harbor-core
+    - https://github.com/bitnami/bitnami-docker-harbor-portal
+    - https://github.com/bitnami/bitnami-docker-harbor-jobservice
+    - https://github.com/bitnami/bitnami-docker-harbor-registry
+    - https://github.com/bitnami/bitnami-docker-harbor-registryctl
+    - https://goharbor.io/
+    urls:
+    - playcekube-dev/harbor-14.0.3.tgz
+    version: 14.0.3
+  ingress-nginx:
+  - annotations:
+      artifacthub.io/changes: |-
+        - "Add controller.metrics.serviceMonitor.annotations in Helm chart"
+        - "fix(labels): use complete labels variable on default-backend deployment"
+        - "chart: allow setting allocateLoadBalancerNodePorts (#10693)"
+        - "[release-1.9] feat(helm): add documentation about metric args (#10695)"
+        - "Update Ingress-Nginx version controller-v1.9.5"
+      artifacthub.io/prerelease: "false"
+      catalog.cattle.io/certified: playcekube
+      catalog.cattle.io/namespace: playcekube
+      catalog.cattle.io/release-name: ingress-nginx
+    apiVersion: v2
+    appVersion: 1.9.5
+    created: "2024-07-18T15:13:25.289290877+09:00"
+    description: Ingress controller for Kubernetes using NGINX as a reverse proxy
+      and load balancer
+    digest: fdc8251e30680c51eb1cf155a128c0f7dbe148b295afa96b5d75eda9f781e6ac
+    home: https://github.com/kubernetes/ingress-nginx
+    icon: https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Nginx_logo.svg/500px-Nginx_logo.svg.png
+    keywords:
+    - networking
+    - infrastructure
+    - ingress
+    - nginx
+    kubeVersion: '>=1.20.0-0'
+    maintainers:
+    - name: rikatz
+    - name: strongjz
+    - name: tao12345666333
+    name: ingress-nginx
+    sources:
+    - https://github.com/kubernetes/ingress-nginx
+    urls:
+    - playcekube/ingress-nginx-4.9.0.tgz
+    version: 4.9.0
+  - annotations:
+      artifacthub.io/changes: |
+        - "[8459](https://github.com/kubernetes/ingress-nginx/pull/8459) Update default allowed CORS headers"
+        - "[8202](https://github.com/kubernetes/ingress-nginx/pull/8202) disable modsecurity on error page"
+        - "[8178](https://github.com/kubernetes/ingress-nginx/pull/8178) Add header Host into mirror annotations"
+        - "[8213](https://github.com/kubernetes/ingress-nginx/pull/8213) feat: always set auth cookie"
+        - "[8548](https://github.com/kubernetes/ingress-nginx/pull/8548) Implement reporting status classes in metrics"
+        - "[8612](https://github.com/kubernetes/ingress-nginx/pull/8612) move so files under /etc/nginx/modules"
+        - "[8624](https://github.com/kubernetes/ingress-nginx/pull/8624) Add patch to remove root and alias directives"
+        - "[8623](https://github.com/kubernetes/ingress-nginx/pull/8623) Improve path rule"
+      artifacthub.io/prerelease: "false"
+      catalog.cattle.io/certified: playcekube
+      catalog.cattle.io/namespace: playcekube
+      catalog.cattle.io/release-name: ingress-nginx
+    apiVersion: v2
+    appVersion: 1.2.1
+    created: "2024-07-18T15:13:25.281406717+09:00"
+    description: Ingress controller for Kubernetes using NGINX as a reverse proxy
+      and load balancer
+    digest: ce37f84493bfa06ac3b43ec0352611893df30d209de57b3df5b412621612923e
+    home: https://github.com/kubernetes/ingress-nginx
+    icon: https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Nginx_logo.svg/500px-Nginx_logo.svg.png
+    keywords:
+    - networking
+    - infrastructure
+    - ingress
+    - nginx
+    kubeVersion: '>=1.19.0-0'
+    maintainers:
+    - name: rikatz
+    - name: strongjz
+    - name: tao12345666333
+    name: ingress-nginx
+    sources:
+    - https://github.com/kubernetes/ingress-nginx
+    type: application
+    urls:
+    - playcekube/ingress-nginx-4.1.4.tgz
+    version: 4.1.4
+  jenkins:
+  - annotations:
+      artifacthub.io/category: integration-delivery
+      artifacthub.io/changes: |
+        - Updated helm-unittest and made unittests compatible.
+      artifacthub.io/images: |
+        - name: jenkins
+          image: jenkins/jenkins:2.426.2-jdk17
+        - name: k8s-sidecar
+          image: kiwigrid/k8s-sidecar:1.24.4
+        - name: inbound-agent
+          image: jenkins/inbound-agent:3192.v713e3b_039fb_e-5
+        - name: backup
+          image: maorfr/kube-tasks:0.2.0
+      artifacthub.io/license: Apache-2.0
+      artifacthub.io/links: |
+        - name: Chart Source
+          url: https://github.com/jenkinsci/helm-charts/tree/main/charts/jenkins
+        - name: Jenkins
+          url: https://www.jenkins.io/
+        - name: support
+          url: https://github.com/jenkinsci/helm-charts/issues
+      catalog.cattle.io/certified: playcekube
+      catalog.cattle.io/namespace: playcekube-dev
+      catalog.cattle.io/release-name: jenkins
+    apiVersion: v2
+    appVersion: 2.426.2
+    created: "2024-07-18T15:13:25.896583849+09:00"
+    description: Jenkins - Build great things at any scale! The leading open source
+      automation server, Jenkins provides over 1800 plugins to support building, deploying
+      and automating any project.
+    digest: 3843107cb14f31d3accf50f34496fc2aede21d16d5fad6b4be9cebdef90c2f44
+    home: https://jenkins.io/
+    icon: https://get.jenkins.io/art/jenkins-logo/logo.svg
+    keywords:
+    - develops
+    - jenkins
+    - ci
+    - devops
+    maintainers:
+    - email: maor.friedman@redhat.com
+      name: maorfr
+    - email: mail@torstenwalter.de
+      name: torstenwalter
+    - email: garridomota@gmail.com
+      name: mogaal
+    - email: wmcdona89@gmail.com
+      name: wmcdona89
+    - email: timjacomb1@gmail.com
+      name: timja
+    name: jenkins
+    sources:
+    - https://github.com/jenkinsci/jenkins
+    - https://github.com/jenkinsci/docker-inbound-agent
+    - https://github.com/maorfr/kube-tasks
+    - https://github.com/jenkinsci/configuration-as-code-plugin
+    urls:
+    - playcekube-dev/jenkins-4.11.1.tgz
+    version: 4.11.1
+  - annotations:
+      artifacthub.io/images: |
+        - name: jenkins
+          image: jenkins/jenkins:2.346.1-jdk11
+        - name: k8s-sidecar
+          image: kiwigrid/k8s-sidecar:1.15.0
+        - name: inbound-agent
+          image: jenkins/inbound-agent:4.11.2-4
+        - name: backup
+          image: maorfr/kube-tasks:0.2.0
+      artifacthub.io/links: |
+        - name: Chart Source
+          url: https://github.com/jenkinsci/helm-charts/tree/main/charts/jenkins
+        - name: Jenkins
+          url: https://www.jenkins.io/
+      catalog.cattle.io/certified: playcekube
+      catalog.cattle.io/namespace: playcekube-dev
+      catalog.cattle.io/release-name: jenkins
+    apiVersion: v2
+    appVersion: 2.346.1
+    created: "2024-07-18T15:13:25.890165944+09:00"
+    description: Jenkins - Build great things at any scale! The leading open source
+      automation server, Jenkins provides hundreds of plugins to support building,
+      deploying and automating any project.
+    digest: 60a5c802609a829f02aec0b8033e711216b63c24df599c288d69847bf39c9d5d
+    home: https://jenkins.io/
+    icon: https://get.jenkins.io/art/jenkins-logo/logo.svg
+    keywords:
+    - develops
+    maintainers:
+    - email: maor.friedman@redhat.com
+      name: maorfr
+    - email: mail@torstenwalter.de
+      name: torstenwalter
+    - email: garridomota@gmail.com
+      name: mogaal
+    - email: wmcdona89@gmail.com
+      name: wmcdona89
+    - email: timjacomb1@gmail.com
+      name: timja
+    name: jenkins
+    sources:
+    - https://github.com/jenkinsci/jenkins
+    - https://github.com/jenkinsci/docker-inbound-agent
+    - https://github.com/maorfr/kube-tasks
+    - https://github.com/jenkinsci/configuration-as-code-plugin
+    urls:
+    - playcekube-dev/jenkins-4.1.12.tgz
+    version: 4.1.12
+  keycloak:
+  - annotations:
+      catalog.cattle.io/certified: playcekube
+      catalog.cattle.io/namespace: playcekube
+      catalog.cattle.io/release-name: keycloak
+      category: DeveloperTools
+      images: |
+        - name: keycloak-config-cli
+          image: docker.io/bitnami/keycloak-config-cli:5.10.0-debian-11-r0
+        - name: keycloak
+          image: docker.io/bitnami/keycloak:23.0.4-debian-11-r0
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 23.0.4
+    created: "2024-07-18T15:13:25.306342052+09:00"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 13.x.x
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Keycloak is a high performance Java-based identity and access management
+      solution. It lets developers add an authentication layer to their applications
+      with minimum effort.
+    digest: 41edb031be8065e6880856dd4e09b17ae0fe05705af0163df98047adaf8fee54
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/keycloak/img/keycloak-stack-220x234.png
+    keywords:
+    - security
+    - infrastructure
+    - keycloak
+    - access-management
+    maintainers:
+    - name: VMware, Inc.
+      url: https://github.com/bitnami/charts
+    name: keycloak
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/keycloak
+    urls:
+    - playcekube/keycloak-18.1.0.tgz
+    version: 18.1.0
+  - annotations:
+      catalog.cattle.io/certified: playcekube
+      catalog.cattle.io/namespace: playcekube
+      catalog.cattle.io/release-name: keycloak
+      category: DeveloperTools
+    apiVersion: v2
+    appVersion: 18.0.0
+    created: "2024-07-18T15:13:25.323048106+09:00"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.x.x
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      tags:
+      - bitnami-common
+      version: 1.x.x
+    description: Keycloak is a high performance Java-based identity and access management
+      solution. It lets developers add an authentication layer to their applications
+      with minimum effort.
+    digest: 25751a5669f9306de772f30ba81596e88555b9fdf7fc9e918cae70f9cbf2e7b1
+    home: https://www.keycloak.org
+    icon: https://bitnami.com/assets/stacks/keycloak/img/keycloak-stack-220x234.png
+    keywords:
+    - security
+    - infrastructure
+    - keycloak
+    - access-management
+    maintainers:
+    - name: Bitnami
+      url: https://github.com/bitnami/charts
+    name: keycloak
+    sources:
+    - https://github.com/bitnami/bitnami-docker-keycloak
+    - https://github.com/keycloak/keycloak
+    urls:
+    - playcekube/keycloak-9.2.2.tgz
+    version: 9.2.2
+  kube-prometheus-stack:
+  - annotations:
+      artifacthub.io/license: Apache-2.0
+      artifacthub.io/links: |
+        - name: Chart Source
+          url: https://github.com/prometheus-community/helm-charts
+        - name: Upstream Project
+          url: https://github.com/prometheus-operator/kube-prometheus
+      artifacthub.io/operator: "true"
+      catalog.cattle.io/certified: playcekube
+      catalog.cattle.io/namespace: playcekube
+      catalog.cattle.io/release-name: kube-prometheus-stack
+    apiVersion: v2
+    appVersion: v0.71.0
+    created: "2024-07-18T15:13:25.419710409+09:00"
+    dependencies:
+    - condition: crds.enabled
+      name: crds
+      repository: ""
+      version: 0.0.0
+    - condition: kubeStateMetrics.enabled
+      name: kube-state-metrics
+      repository: https://prometheus-community.github.io/helm-charts
+      version: 5.16.*
+    - condition: nodeExporter.enabled
+      name: prometheus-node-exporter
+      repository: https://prometheus-community.github.io/helm-charts
+      version: 4.25.*
+    - condition: grafana.enabled
+      name: grafana
+      repository: https://grafana.github.io/helm-charts
+      version: 7.2.*
+    - condition: windowsMonitoring.enabled
+      name: prometheus-windows-exporter
+      repository: https://prometheus-community.github.io/helm-charts
+      version: 0.2.*
+    description: kube-prometheus-stack collects Kubernetes manifests, Grafana dashboards,
+      and Prometheus rules combined with documentation and scripts to provide easy
+      to operate end-to-end Kubernetes cluster monitoring with Prometheus using the
+      Prometheus Operator.
+    digest: fe920691ce5458c68d3f64a40ad6480f343cdc17c1f9aa6a8f2876678b133009
+    home: https://github.com/prometheus-operator/kube-prometheus
+    icon: https://raw.githubusercontent.com/prometheus/prometheus.github.io/master/assets/prometheus_logo-cb55bb5c346.png
+    keywords:
+    - monitoring
+    - infrastructure
+    - operator
+    - prometheus
+    - kube-prometheus
+    kubeVersion: '>=1.19.0-0'
+    maintainers:
+    - email: andrew@quadcorps.co.uk
+      name: andrewgkew
+    - email: gianrubio@gmail.com
+      name: gianrubio
+    - email: github.gkarthiks@gmail.com
+      name: gkarthiks
+    - email: kube-prometheus-stack@sisti.pt
+      name: GMartinez-Sisti
+    - email: github@jkroepke.de
+      name: jkroepke
+    - email: scott@r6by.com
+      name: scottrigby
+    - email: miroslav.hadzhiev@gmail.com
+      name: Xtigyro
+    - email: quentin.bisson@gmail.com
+      name: QuentinBisson
+    name: kube-prometheus-stack
+    sources:
+    - https://github.com/prometheus-community/helm-charts
+    - https://github.com/prometheus-operator/kube-prometheus
+    type: application
+    urls:
+    - playcekube/kube-prometheus-stack-56.0.3.tgz
+    version: 56.0.3
+  - annotations:
+      artifacthub.io/links: |
+        - name: Chart Source
+          url: https://github.com/prometheus-community/helm-charts
+        - name: Upstream Project
+          url: https://github.com/prometheus-operator/kube-prometheus
+      artifacthub.io/operator: "true"
+      catalog.cattle.io/certified: playcekube
+      catalog.cattle.io/namespace: playcekube
+      catalog.cattle.io/release-name: kube-prometheus-stack
+    apiVersion: v2
+    appVersion: 0.56.2
+    created: "2024-07-18T15:13:25.365922669+09:00"
+    dependencies:
+    - condition: kubeStateMetrics.enabled
+      name: kube-state-metrics
+      repository: https://prometheus-community.github.io/helm-charts
+      version: 4.7.*
+    - condition: nodeExporter.enabled
+      name: prometheus-node-exporter
+      repository: https://prometheus-community.github.io/helm-charts
+      version: 3.1.*
+    - condition: grafana.enabled
+      name: grafana
+      repository: https://grafana.github.io/helm-charts
+      version: 6.29.*
+    description: kube-prometheus-stack collects Kubernetes manifests, Grafana dashboards,
+      and Prometheus rules combined with documentation and scripts to provide easy
+      to operate end-to-end Kubernetes cluster monitoring with Prometheus using the
+      Prometheus Operator.
+    digest: 36ee5c1839c390341a08364a5fcf05cfece4ef32f287290c7528ece5afae67fb
+    home: https://github.com/prometheus-operator/kube-prometheus
+    icon: https://raw.githubusercontent.com/prometheus/prometheus.github.io/master/assets/prometheus_logo-cb55bb5c346.png
+    keywords:
+    - monitoring
+    - infrastructure
+    - operator
+    - prometheus
+    - kube-prometheus
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: andrew@quadcorps.co.uk
+      name: andrewgkew
+    - name: bismarck
+    - email: cedric@desaintmartin.fr
+      name: desaintmartin
+    - email: gianrubio@gmail.com
+      name: gianrubio
+    - email: github.gkarthiks@gmail.com
+      name: gkarthiks
+    - email: kube-prometheus-stack@sisti.pt
+      name: GMartinez-Sisti
+    - email: scott@r6by.com
+      name: scottrigby
+    - email: miroslav.hadzhiev@gmail.com
+      name: Xtigyro
+    name: kube-prometheus-stack
+    sources:
+    - https://github.com/prometheus-community/helm-charts
+    - https://github.com/prometheus-operator/kube-prometheus
+    type: application
+    urls:
+    - playcekube/kube-prometheus-stack-35.3.1.tgz
+    version: 35.3.1
+  linkerd-control-plane:
+  - annotations:
+      catalog.cattle.io/certified: playcekube
+      catalog.cattle.io/namespace: playcekube
+      catalog.cattle.io/release-name: linkerd-control-plane
+    apiVersion: v2
+    appVersion: stable-2.14.9
+    created: "2024-07-18T15:13:25.427739043+09:00"
+    dependencies:
+    - name: partials
+      repository: file://../partials
+      version: 0.1.0
+    description: 'Linkerd gives you observability, reliability, and security for your
+      microservices — with no code change required. '
+    digest: 861820a05be7e26c6132d276545cd10e99649ef740bae5b2aba8ccff3c148191
+    home: https://linkerd.io
+    icon: https://linkerd.io/images/logo-only-200h.png
+    keywords:
+    - networking
+    - monitoring
+    - infrastructure
+    - service-mesh
+    kubeVersion: '>=1.21.0-0'
+    maintainers:
+    - email: cncf-linkerd-dev@lists.cncf.io
+      name: Linkerd authors
+      url: https://linkerd.io/
+    name: linkerd-control-plane
+    sources:
+    - https://github.com/linkerd/linkerd2/
+    type: application
+    urls:
+    - playcekube/linkerd-control-plane-1.16.10.tgz
+    version: 1.16.10
+  linkerd-crds:
+  - apiVersion: v2
+    created: "2024-07-18T15:13:25.434828351+09:00"
+    dependencies:
+    - name: partials
+      repository: file://../partials
+      version: 0.1.0
+    description: 'Linkerd gives you observability, reliability, and security for your
+      microservices — with no code change required. '
+    digest: 8f84f4df13ed5b4ecb6f068a9dbfd5d8f3f4982c29621be2906fae9e51426422
+    home: https://linkerd.io
+    icon: https://linkerd.io/images/logo-only-200h.png
+    keywords:
+    - service-mesh
+    kubeVersion: '>=1.21.0-0'
+    maintainers:
+    - email: cncf-linkerd-dev@lists.cncf.io
+      name: Linkerd authors
+      url: https://linkerd.io/
+    name: linkerd-crds
+    sources:
+    - https://github.com/linkerd/linkerd2/
+    type: application
+    urls:
+    - playcekube/linkerd-crds-1.8.0.tgz
+    version: 1.8.0
+  linkerd-jaeger:
+  - annotations:
+      catalog.cattle.io/certified: playcekube
+      catalog.cattle.io/namespace: playcekube
+      catalog.cattle.io/release-name: linkerd-jaeger
+    apiVersion: v1
+    appVersion: stable-2.11.1
+    created: "2024-07-18T15:13:25.437272835+09:00"
+    dependencies:
+    - name: partials
+      repository: file://../../../charts/partials
+      version: 0.1.0
+    description: 'The Linkerd-Jaeger extension adds distributed tracing to Linkerd
+      using OpenCensus and Jaeger. '
+    digest: 4ddbf6e7ebe4bf14ce56da1bf64b8a7bb698923116d8f14e4d87847bb0df6482
+    home: https://linkerd.io
+    icon: https://linkerd.io/images/logo-only-200h.png
+    keywords:
+    - networking
+    - monitoring
+    - infrastructure
+    - service-mesh
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: cncf-linkerd-dev@lists.cncf.io
+      name: Linkerd authors
+      url: https://linkerd.io/
+    name: linkerd-jaeger
+    sources:
+    - https://github.com/linkerd/linkerd2/
+    urls:
+    - playcekube/linkerd-jaeger-2.11.1.tgz
+    version: 2.11.1
+  linkerd-multicluster:
+  - annotations:
+      catalog.cattle.io/certified: playcekube
+      catalog.cattle.io/namespace: playcekube
+      catalog.cattle.io/release-name: linkerd-multicluster
+    apiVersion: v1
+    appVersion: stable-2.11.1
+    created: "2024-07-18T15:13:25.439389419+09:00"
+    dependencies:
+    - name: partials
+      repository: file://../../../charts/partials
+      version: 0.1.0
+    description: 'The Linkerd-Multicluster extension contains resources to support
+      multicluster linking to remote clusters '
+    digest: 3c260938393265e08655c3085711a8a76739dbf5196b55b801386b2d3f8256f3
+    home: https://linkerd.io
+    icon: https://linkerd.io/images/logo-only-200h.png
+    keywords:
+    - networking
+    - monitoring
+    - infrastructure
+    - service-mesh
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: cncf-linkerd-dev@lists.cncf.io
+      name: Linkerd authors
+      url: https://linkerd.io/
+    name: linkerd-multicluster
+    sources:
+    - https://github.com/linkerd/linkerd2/
+    urls:
+    - playcekube/linkerd-multicluster-2.11.1.tgz
+    version: 2.11.1
+  linkerd-viz:
+  - annotations:
+      catalog.cattle.io/certified: playcekube
+      catalog.cattle.io/namespace: playcekube
+      catalog.cattle.io/release-name: linkerd-viz
+    apiVersion: v1
+    appVersion: stable-2.14.9
+    created: "2024-07-18T15:13:25.447644846+09:00"
+    dependencies:
+    - name: partials
+      repository: file://../../../charts/partials
+      version: 0.1.0
+    description: 'The Linkerd-Viz extension contains observability and visualization
+      components for Linkerd. '
+    digest: 70808a88d426a2e3fcc96b6523f28835a732b419f47926cfbadb53ba4a162602
+    home: https://linkerd.io
+    icon: https://linkerd.io/images/logo-only-200h.png
+    keywords:
+    - networking
+    - monitoring
+    - infrastructure
+    - service-mesh
+    kubeVersion: '>=1.21.0-0'
+    maintainers:
+    - email: cncf-linkerd-dev@lists.cncf.io
+      name: Linkerd authors
+      url: https://linkerd.io/
+    name: linkerd-viz
+    sources:
+    - https://github.com/linkerd/linkerd2/
+    urls:
+    - playcekube/linkerd-viz-30.12.10.tgz
+    version: 30.12.10
+  - annotations:
+      catalog.cattle.io/certified: playcekube
+      catalog.cattle.io/namespace: playcekube
+      catalog.cattle.io/release-name: linkerd-viz
+    apiVersion: v1
+    appVersion: stable-2.11.1
+    created: "2024-07-18T15:13:25.443904407+09:00"
+    dependencies:
+    - name: partials
+      repository: file://../../../charts/partials
+      version: 0.1.0
+    description: 'The Linkerd-Viz extension contains observability and visualization
+      components for Linkerd. '
+    digest: ec39f78b6f3b2c76321815c1bfbfc252c23cf993e236bbc5c65b2fcfb1ecadbf
+    home: https://linkerd.io
+    icon: https://linkerd.io/images/logo-only-200h.png
+    keywords:
+    - networking
+    - monitoring
+    - infrastructure
+    - service-mesh
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: cncf-linkerd-dev@lists.cncf.io
+      name: Linkerd authors
+      url: https://linkerd.io/
+    name: linkerd-viz
+    sources:
+    - https://github.com/linkerd/linkerd2/
+    urls:
+    - playcekube/linkerd-viz-2.11.1.tgz
+    version: 2.11.1
+  metrics-server:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: added
+          description: "Added default Metrics Server resource requests."
+        - kind: changed
+          description: "Updated the Metrics Server OCI image to v0.6.3."
+        - kind: changed
+          description: "Updated the addon resizer OCI image to v1.8.19."
+        - kind: changed
+          description: "Changed the default addon resizer nanny resource configuration to match the documented Metrics Server autoscaling values."
+      catalog.cattle.io/certified: playcekube
+      catalog.cattle.io/namespace: kube-system
+      catalog.cattle.io/release-name: metrics-server
+    apiVersion: v2
+    appVersion: 0.6.4
+    created: "2024-07-18T15:13:25.265056433+09:00"
+    description: Metrics Server is a scalable, efficient source of container resource
+      metrics for Kubernetes built-in autoscaling pipelines.
+    digest: 5f29ec0519ea46612be43ac43c15f656d20cb35d1728048307479fc3040a461d
+    home: https://github.com/kubernetes-sigs/metrics-server
+    icon: https://avatars.githubusercontent.com/u/36015203?s=400&v=4
+    keywords:
+    - monitoring
+    - infrastructure
+    - kubernetes
+    - metrics-server
+    - metrics
+    maintainers:
+    - name: stevehipwell
+      url: https://github.com/stevehipwell
+    - name: krmichel
+      url: https://github.com/krmichel
+    - name: endrec
+      url: https://github.com/endrec
+    name: metrics-server
+    sources:
+    - https://github.com/kubernetes-sigs/metrics-server
+    type: application
+    urls:
+    - kube-system/metrics-server-3.11.0.tgz
+    version: 3.11.0
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
+          description: "Allow probes to be turned off completly (this is not advised unless you know what you're doing)."
+      catalog.cattle.io/certified: playcekube
+      catalog.cattle.io/namespace: kube-system
+      catalog.cattle.io/release-name: metrics-server
+    apiVersion: v2
+    appVersion: 0.6.1
+    created: "2024-07-18T15:13:25.266267368+09:00"
+    description: Metrics Server is a scalable, efficient source of container resource
+      metrics for Kubernetes built-in autoscaling pipelines.
+    digest: 49391f5c5409a5cdfd024c4b147d585e94424e999d647f1aae385f42b66e1019
+    home: https://github.com/kubernetes-sigs/metrics-server
+    icon: https://avatars.githubusercontent.com/u/36015203?s=400&v=4
+    keywords:
+    - monitoring
+    - infrastructure
+    - kubernetes
+    - metrics-server
+    - metrics
+    maintainers:
+    - name: stevehipwell
+      url: https://github.com/stevehipwell
+    - name: krmichel
+      url: https://github.com/krmichel
+    - name: endrec
+      url: https://github.com/endrec
+    name: metrics-server
+    sources:
+    - https://github.com/kubernetes-sigs/metrics-server
+    type: application
+    urls:
+    - kube-system/metrics-server-3.8.2.tgz
+    version: 3.8.2
+  minio:
+  - annotations:
+      catalog.cattle.io/certified: playcekube
+      catalog.cattle.io/namespace: playcekube
+      catalog.cattle.io/release-name: minio
+    apiVersion: v1
+    appVersion: RELEASE.2022-05-08T23-50-31Z
+    created: "2024-07-18T15:13:25.450625931+09:00"
+    description: Multi-Cloud Object Storage
+    digest: 7ba2d95626e802fab20c09b3f6527d1eeaf7c08af432b0dda16dd49ec9c7fed6
+    home: https://min.io
+    icon: https://min.io/resources/img/logo/MINIO_wordmark.png
+    keywords:
+    - infrastructure
+    - minio
+    - storage
+    - object-storage
+    - s3
+    - cluster
+    maintainers:
+    - email: dev@minio.io
+      name: MinIO, Inc
+    name: minio
+    sources:
+    - https://github.com/minio/minio
+    urls:
+    - playcekube/minio-4.0.2.tgz
+    version: 4.0.2
+  oauth2-proxy:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: fixed
+          description: Fix indentation in alpha config
+          links:
+            - name: Github PR
+              url: https://github.com/oauth2-proxy/manifests/pull/180
+      catalog.cattle.io/certified: playcekube
+      catalog.cattle.io/namespace: playcekube
+      catalog.cattle.io/release-name: oauth2-proxy
+    apiVersion: v2
+    appVersion: 7.5.1
+    created: "2024-07-18T15:13:25.480178935+09:00"
+    dependencies:
+    - alias: redis
+      condition: redis.enabled
+      name: redis
+      repository: https://charts.bitnami.com/bitnami
+      version: ~18.5.0
+    description: A reverse proxy that provides authentication with Google, Github
+      or other providers
+    digest: 98d7ad197c5b9d979f1701378e8e9344cfa855cea3edb15a926c040e342f24e9
+    home: https://oauth2-proxy.github.io/oauth2-proxy/
+    keywords:
+    - security
+    - infrastructure
+    - kubernetes
+    - oauth
+    - oauth2
+    - authentication
+    - google
+    - github
+    - redis
+    kubeVersion: '>=1.9.0-0'
+    maintainers:
+    - email: cedric@desaintmartin.fr
+      name: desaintmartin
+    - name: tlawrie
+    - email: nicholas.meves@gmail.com
+      name: NickMeves
+    - email: joel.speed@hotmail.co.uk
+      name: JoelSpeed
+    - email: pierluigi.lenoci@gmail.com
+      name: pierluigilenoci
+    name: oauth2-proxy
+    sources:
+    - https://github.com/oauth2-proxy/oauth2-proxy
+    - https://github.com/oauth2-proxy/manifests
+    urls:
+    - playcekube/oauth2-proxy-6.23.1.tgz
+    version: 6.23.1
+  - annotations:
+      catalog.cattle.io/certified: playcekube
+      catalog.cattle.io/namespace: playcekube
+      catalog.cattle.io/release-name: oauth2-proxy
+    apiVersion: v2
+    appVersion: 7.2.0
+    created: "2024-07-18T15:13:25.462212699+09:00"
+    dependencies:
+    - alias: redis
+      condition: redis.enabled
+      name: redis
+      repository: https://charts.bitnami.com/bitnami
+      version: ~16.4.0
+    description: A reverse proxy that provides authentication with Google, Github
+      or other providers
+    digest: db1e784dd822db6a0a1b47b9dad854a1274c6e51f3235c03e99bdd2fe783329d
+    home: https://oauth2-proxy.github.io/oauth2-proxy/
+    keywords:
+    - security
+    - infrastructure
+    - kubernetes
+    - oauth
+    - oauth2
+    - authentication
+    - google
+    - github
+    - redis
+    kubeVersion: '>=1.9.0-0'
+    maintainers:
+    - email: cedric@desaintmartin.fr
+      name: desaintmartin
+    - name: tlawrie
+    - email: nicholas.meves@gmail.com
+      name: NickMeves
+    - email: joel.speed@hotmail.co.uk
+      name: JoelSpeed
+    - email: pierluigi.lenoci@gmail.com
+      name: pierluigilenoci
+    name: oauth2-proxy
+    sources:
+    - https://github.com/oauth2-proxy/oauth2-proxy
+    - https://github.com/oauth2-proxy/manifests
+    urls:
+    - playcekube/oauth2-proxy-6.2.0.tgz
+    version: 6.2.0
+  opendistro-es:
+  - annotations:
+      catalog.cattle.io/certified: playcekube
+      catalog.cattle.io/namespace: playcekube
+      catalog.cattle.io/release-name: opendistro-es
+    apiVersion: v1
+    appVersion: 1.13.3
+    created: "2024-07-18T15:13:25.486326605+09:00"
+    description: Open Distro for Elasticsearch
+    digest: 16fc059cce45537a7010368dd1542e4f2dd0acc8ffa70a422f3fcabd90b8ed74
+    keywords:
+    - logging
+    - monitoring
+    - infrastructure
+    kubeVersion: ^1.10.0-0
+    maintainers:
+    - email: derek.heldt-werle@viasat.com
+      name: Derek Heldt-Werle
+    - email: kalvin.chau@viasat.com
+      name: Kalvin Chau
+    name: opendistro-es
+    sources:
+    - https://pages.git.viasat.com/ATG/charts
+    urls:
+    - playcekube/opendistro-es-1.13.3.tgz
+    version: 1.13.3
+  opensearch:
+  - annotations:
+      catalog.cattle.io/certified: playcekube
+      catalog.cattle.io/namespace: playcekube
+      catalog.cattle.io/release-name: opensearch
+    apiVersion: v2
+    appVersion: 2.9.0
+    created: "2024-07-18T15:13:25.499346904+09:00"
+    dependencies:
+    - condition: fluent-bit.enabled
+      name: fluent-bit
+      repository: ""
+    description: A Helm chart for OpenSearch
+    digest: 642cd8bac32fc167b4453b99a4a50afe3b97b1eb91edbae52415272645454593
+    home: https://opensearch.org
+    keywords:
+    - logging
+    - monitoring
+    - infrastructure
+    maintainers:
+    - name: DandyDeveloper
+    - name: bbarani
+    - name: gaiksaya
+    - name: peterzhuamazon
+    - name: prudhvigodithi
+    - name: TheAlgo
+    name: opensearch
+    sources:
+    - https://github.com/opensearch-project/opensearch
+    - https://github.com/opensearch-project/helm-charts
+    type: application
+    urls:
+    - playcekube/opensearch-2.14.1.tgz
+    version: 2.14.1
+  sonarqube:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
+          description: "Upgrade SonarQube to 10.4.0"
+        - kind: changed
+          description: "Update Chart's version to 10.4.0"
+        - kind: fixed
+          description: "Improve the description of deprecated 'jvmOpts' and 'jvmCeOpts' values"
+        - kind: fixed
+          description: "Run the initSysctl init-container as root to prevent 'permission denied' issues"
+        - kind: changed
+          description: "Add revisionHistoryLimit configuration for SonarQube application Deployment ReplicaSets & StatefulSets"
+        - kind: changed
+          description: "Update the security contexts to use root as group ID"
+        - kind: changed
+          description: "Fix empty ingress annotations in values"
+      artifacthub.io/containsSecurityUpdates: "false"
+      artifacthub.io/images: |
+        - name: sonarqube
+          image: sonarqube:10.4.0-community
+      artifacthub.io/links: |
+        - name: support
+          url: https://community.sonarsource.com/
+        - name: Chart Source
+          url: https://github.com/SonarSource/helm-chart-sonarqube/tree/master/charts/sonarqube
+      catalog.cattle.io/certified: playcekube
+      catalog.cattle.io/namespace: playcekube-dev
+      catalog.cattle.io/release-name: sonarqube
+    apiVersion: v2
+    appVersion: 10.4.0
+    created: "2024-07-18T15:13:25.920367562+09:00"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://raw.githubusercontent.com/bitnami/charts/pre-2022/bitnami
+      version: 10.15.0
+    - condition: nginx.enabled
+      name: ingress-nginx
+      repository: https://kubernetes.github.io/ingress-nginx
+      version: 4.8.3
+    description: SonarQube is a self-managed, automatic code review tool that systematically
+      helps you deliver clean code. As a core element of our Sonar solution, SonarQube
+      integrates into your existing workflow and detects issues in your code to help
+      you perform continuous code inspections of your projects. The tool analyses
+      30+ different programming languages and integrates into your CI pipeline and
+      DevOps platform to ensure that your code meets high-quality standards.
+    digest: a0df1756ad5001931a27046ee3adb846a5e8d969b79448dd76477607600cf119
+    home: https://www.sonarqube.org/
+    icon: https://raw.githubusercontent.com/SonarSource/sonarqube-static-resources/master/helm/SonarQubeLogo.svg
+    keywords:
+    - develops
+    - coverage
+    - security
+    - code
+    - quality
+    kubeVersion: '>= 1.24.0-0'
+    maintainers:
+    - email: leo.geoffroy+helm@sonarsource.com
+      name: leo-geoffroy-sonarsource
+    - email: carmine.vassallo@sonarsource.com
+      name: carminevassallo
+    - email: jeremy.cotineau@sonarsource.com
+      name: jCOTINEAU
+    - email: davi.koscianski-vidal@sonarsource.com
+      name: davividal
+    name: sonarqube
+    sources:
+    - https://github.com/SonarSource/helm-chart-sonarqube
+    - https://github.com/SonarSource/docker-sonarqube
+    - https://github.com/SonarSource/sonarqube
+    type: application
+    urls:
+    - playcekube-dev/sonarqube-10.4.0+2288.tgz
+    version: 10.4.0+2288
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
+          description : "Update the list of supported kubernetes versions"
+        - kind: changed
+          description : "Set a new default (maximum) allowed size of the client request body on the ingress"
+        - kind: changed
+          description: "Update SonarQube to 9.9.0"
+        - kind: changed
+          description: "Mark 8.x.x chart as the LTS (SonarQube 9.9.x) chart"
+      artifacthub.io/containsSecurityUpdates: "false"
+      artifacthub.io/images: |
+        - name: sonarqube
+          image: sonarqube:9.9.0-community
+      artifacthub.io/links: |
+        - name: support
+          url: https://community.sonarsource.com/
+        - name: Chart Source
+          url: https://github.com/SonarSource/helm-chart-sonarqube/tree/master/charts/sonarqube
+      catalog.cattle.io/certified: playcekube
+      catalog.cattle.io/namespace: playcekube-dev
+      catalog.cattle.io/release-name: sonarqube
+    apiVersion: v2
+    appVersion: 9.9.0
+    created: "2024-07-18T15:13:25.936011799+09:00"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://raw.githubusercontent.com/bitnami/charts/pre-2022/bitnami
+      version: 10.15.0
+    - condition: nginx.enabled
+      name: ingress-nginx
+      repository: https://kubernetes.github.io/ingress-nginx
+      version: 4.0.13
+    description: SonarQube offers Code Quality and Code Security analysis for up to
+      27 languages. Find Bugs, Vulnerabilities, Security Hotspots and Code Smells
+      throughout your workflow.
+    digest: 0d86a84855f26df27f4dd5afba82e021ed43f3705c833e7f17adbbe8ed9f1ace
+    home: https://www.sonarqube.org/
+    icon: https://www.sonarqube.org/assets/logo-31ad3115b1b4b120f3d1efd63e6b13ac9f1f89437f0cf6881cc4d8b5603a52b4.svg
+    keywords:
+    - develops
+    - coverage
+    - security
+    - code
+    - quality
+    kubeVersion: '>= 1.19.0-0'
+    maintainers:
+    - email: leo.geoffroy+helm@sonarsource.com
+      name: leo-geoffroy-sonarsource
+    - email: carmine.vassallo@sonarsource.com
+      name: carminevassallo
+    - email: jeremy.cotineau@sonarsource.com
+      name: jCOTINEAU
+    name: sonarqube
+    sources:
+    - https://github.com/SonarSource/docker-sonarqube
+    - https://github.com/SonarSource/sonarqube
+    type: application
+    urls:
+    - playcekube-dev/sonarqube-8.0.0+463.tgz
+    version: 8.0.0+463
+  tekton-pipeline:
+  - annotations:
+      catalog.cattle.io/certified: playcekube
+      catalog.cattle.io/namespace: playcekube-dev
+      catalog.cattle.io/release-name: tekton-pipeline
+    apiVersion: v2
+    appVersion: v0.32.1
+    created: "2024-07-18T15:13:25.9380385+09:00"
+    dependencies:
+    - condition: tekton-triggers.enabled
+      name: tekton-triggers
+      repository: ""
+    description: A Helm chart for tekton-pipeline
+    digest: b4183cdac51633c8a998529104dba49df4e10fe30f700a8b26b2ba178e1b573b
+    keywords:
+    - develops
+    name: tekton-pipeline
+    type: application
+    urls:
+    - playcekube-dev/tekton-pipeline-v0.32.1.tgz
+    version: v0.32.1
+  velero:
+  - annotations:
+      catalog.cattle.io/certified: playcekube
+      catalog.cattle.io/namespace: playcekube
+      catalog.cattle.io/release-name: velero
+    apiVersion: v2
+    appVersion: 1.9.0
+    created: "2024-07-18T15:13:25.502825696+09:00"
+    description: A Helm chart for velero
+    digest: 26b9400bcdebd6c74760dc075f7cdb73d14cff80c7d2e84a2363d0dcc2fd51ab
+    home: https://github.com/vmware-tanzu/velero
+    icon: https://cdn-images-1.medium.com/max/1600/1*-9mb3AKnKdcL_QD3CMnthQ.png
+    keywords:
+    - infrastructure
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: hsiaoairplane@gmail.com
+      name: jenting
+    - email: sseago@redhat.com
+      name: sseago
+    - email: jiangd@vmware.com
+      name: reasonerjt
+    - email: yinw@vmware.com
+      name: ywk253100
+    name: velero
+    sources:
+    - https://github.com/vmware-tanzu/velero
+    urls:
+    - playcekube/velero-2.30.1.tgz
+    version: 2.30.1
+generated: "2024-07-18T15:13:25.26317065+09:00"
