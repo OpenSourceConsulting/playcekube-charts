@@ -1,0 +1,21 @@
+annotations:
+  catalog.cattle.io/certified: playcekube
+  catalog.cattle.io/namespace: playcekube
+  catalog.cattle.io/release-name: opendistro-es
+apiVersion: v1
+appVersion: 1.13.3
+description: Open Distro for Elasticsearch
+keywords:
+- logging
+- monitoring
+- infrastructure
+kubeVersion: ^1.10.0-0
+maintainers:
+- email: derek.heldt-werle@viasat.com
+  name: Derek Heldt-Werle
+- email: kalvin.chau@viasat.com
+  name: Kalvin Chau
+name: opendistro-es
+sources:
+- https://pages.git.viasat.com/ATG/charts
+version: 1.13.3

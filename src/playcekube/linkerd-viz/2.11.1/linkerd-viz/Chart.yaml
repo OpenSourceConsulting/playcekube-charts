@@ -1,0 +1,24 @@
+annotations:
+  catalog.cattle.io/certified: playcekube
+  catalog.cattle.io/namespace: playcekube
+  catalog.cattle.io/release-name: linkerd-viz
+apiVersion: v1
+appVersion: stable-2.11.1
+description: 'The Linkerd-Viz extension contains observability and visualization components
+  for Linkerd. '
+home: https://linkerd.io
+icon: https://raw.githubusercontent.com/OpenSourceConsulting/playcekube-charts/v2.1.0/assets/icon/linkerd-viz-icon.png
+keywords:
+- networking
+- monitoring
+- infrastructure
+- service-mesh
+kubeVersion: '>=1.16.0-0'
+maintainers:
+- email: cncf-linkerd-dev@lists.cncf.io
+  name: Linkerd authors
+  url: https://linkerd.io/
+name: linkerd-viz
+sources:
+- https://github.com/linkerd/linkerd2/
+version: 2.11.1

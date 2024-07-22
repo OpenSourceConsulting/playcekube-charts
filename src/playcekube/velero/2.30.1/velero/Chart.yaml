@@ -1,0 +1,25 @@
+annotations:
+  catalog.cattle.io/certified: playcekube
+  catalog.cattle.io/namespace: playcekube
+  catalog.cattle.io/release-name: velero
+apiVersion: v2
+appVersion: 1.9.0
+description: A Helm chart for velero
+home: https://github.com/vmware-tanzu/velero
+icon: https://raw.githubusercontent.com/OpenSourceConsulting/playcekube-charts/v2.1.0/assets/icon/velero-icon.png
+keywords:
+- infrastructure
+kubeVersion: '>=1.16.0-0'
+maintainers:
+- email: hsiaoairplane@gmail.com
+  name: jenting
+- email: sseago@redhat.com
+  name: sseago
+- email: jiangd@vmware.com
+  name: reasonerjt
+- email: yinw@vmware.com
+  name: ywk253100
+name: velero
+sources:
+- https://github.com/vmware-tanzu/velero
+version: 2.30.1

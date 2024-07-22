@@ -1,0 +1,16 @@
+annotations:
+  catalog.cattle.io/certified: playcekube
+  catalog.cattle.io/namespace: playcekube-dev
+  catalog.cattle.io/release-name: tekton-pipeline
+apiVersion: v2
+appVersion: v0.32.1
+dependencies:
+- condition: tekton-triggers.enabled
+  name: tekton-triggers
+  repository: ""
+description: A Helm chart for tekton-pipeline
+keywords:
+- develops
+name: tekton-pipeline
+type: application
+version: v0.32.1

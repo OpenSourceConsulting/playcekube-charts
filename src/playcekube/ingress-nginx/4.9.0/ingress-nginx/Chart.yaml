@@ -1,0 +1,31 @@
+annotations:
+  artifacthub.io/changes: |-
+    - "Add controller.metrics.serviceMonitor.annotations in Helm chart"
+    - "fix(labels): use complete labels variable on default-backend deployment"
+    - "chart: allow setting allocateLoadBalancerNodePorts (#10693)"
+    - "[release-1.9] feat(helm): add documentation about metric args (#10695)"
+    - "Update Ingress-Nginx version controller-v1.9.5"
+  artifacthub.io/prerelease: "false"
+  catalog.cattle.io/certified: playcekube
+  catalog.cattle.io/namespace: playcekube
+  catalog.cattle.io/release-name: ingress-nginx
+apiVersion: v2
+appVersion: 1.9.5
+description: Ingress controller for Kubernetes using NGINX as a reverse proxy and
+  load balancer
+home: https://github.com/kubernetes/ingress-nginx
+icon: https://raw.githubusercontent.com/OpenSourceConsulting/playcekube-charts/v2.1.0/assets/icon/ingress-nginx-icon.png
+keywords:
+- networking
+- infrastructure
+- ingress
+- nginx
+kubeVersion: '>=1.20.0-0'
+maintainers:
+- name: rikatz
+- name: strongjz
+- name: tao12345666333
+name: ingress-nginx
+sources:
+- https://github.com/kubernetes/ingress-nginx
+version: 4.9.0

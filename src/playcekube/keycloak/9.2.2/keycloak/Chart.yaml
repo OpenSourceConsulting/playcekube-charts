@@ -1,0 +1,35 @@
+annotations:
+  catalog.cattle.io/certified: playcekube
+  catalog.cattle.io/namespace: playcekube
+  catalog.cattle.io/release-name: keycloak
+  category: DeveloperTools
+apiVersion: v2
+appVersion: 18.0.0
+dependencies:
+- condition: postgresql.enabled
+  name: postgresql
+  repository: https://charts.bitnami.com/bitnami
+  version: 11.x.x
+- name: common
+  repository: https://charts.bitnami.com/bitnami
+  tags:
+  - bitnami-common
+  version: 1.x.x
+description: Keycloak is a high performance Java-based identity and access management
+  solution. It lets developers add an authentication layer to their applications with
+  minimum effort.
+home: https://www.keycloak.org
+icon: https://raw.githubusercontent.com/OpenSourceConsulting/playcekube-charts/v2.1.0/assets/icon/keycloak-icon.png
+keywords:
+- security
+- infrastructure
+- keycloak
+- access-management
+maintainers:
+- name: Bitnami
+  url: https://github.com/bitnami/charts
+name: keycloak
+sources:
+- https://github.com/bitnami/bitnami-docker-keycloak
+- https://github.com/keycloak/keycloak
+version: 9.2.2

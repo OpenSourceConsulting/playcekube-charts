@@ -1,0 +1,29 @@
+annotations:
+  catalog.cattle.io/certified: playcekube
+  catalog.cattle.io/namespace: playcekube
+  catalog.cattle.io/release-name: linkerd-control-plane
+apiVersion: v2
+appVersion: stable-2.14.9
+dependencies:
+- name: partials
+  repository: file://../partials
+  version: 0.1.0
+description: 'Linkerd gives you observability, reliability, and security for your
+  microservices — with no code change required. '
+home: https://linkerd.io
+icon: https://raw.githubusercontent.com/OpenSourceConsulting/playcekube-charts/v2.1.0/assets/icon/linkerd-control-plane-icon.png
+keywords:
+- networking
+- monitoring
+- infrastructure
+- service-mesh
+kubeVersion: '>=1.21.0-0'
+maintainers:
+- email: cncf-linkerd-dev@lists.cncf.io
+  name: Linkerd authors
+  url: https://linkerd.io/
+name: linkerd-control-plane
+sources:
+- https://github.com/linkerd/linkerd2/
+type: application
+version: 1.16.10

@@ -1,0 +1,29 @@
+annotations:
+  catalog.cattle.io/certified: playcekube
+  catalog.cattle.io/namespace: playcekube
+  catalog.cattle.io/release-name: opensearch
+apiVersion: v2
+appVersion: 2.9.0
+dependencies:
+- condition: fluent-bit.enabled
+  name: fluent-bit
+  repository: ""
+description: A Helm chart for OpenSearch
+home: https://opensearch.org
+keywords:
+- logging
+- monitoring
+- infrastructure
+maintainers:
+- name: DandyDeveloper
+- name: bbarani
+- name: gaiksaya
+- name: peterzhuamazon
+- name: prudhvigodithi
+- name: TheAlgo
+name: opensearch
+sources:
+- https://github.com/opensearch-project/opensearch
+- https://github.com/opensearch-project/helm-charts
+type: application
+version: 2.14.1

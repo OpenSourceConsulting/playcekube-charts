@@ -1,0 +1,19 @@
+annotations:
+  artifacthub.io/changes: |
+    - "[Added]: Additional manifests to deploy within the chart"
+  catalog.cattle.io/certified: playcekube
+  catalog.cattle.io/namespace: playcekube-dev
+  catalog.cattle.io/release-name: argo-rollouts
+apiVersion: v2
+appVersion: v1.2.0
+description: A Helm chart for Argo Rollouts
+home: https://github.com/argoproj/argo-helm
+icon: https://raw.githubusercontent.com/OpenSourceConsulting/playcekube-charts/v2.1.0/assets/icon/argo-rollouts-icon.png
+keywords:
+- develops
+maintainers:
+- name: alexmt
+- name: dthomson25
+- name: jessesuen
+name: argo-rollouts
+version: 2.18.0

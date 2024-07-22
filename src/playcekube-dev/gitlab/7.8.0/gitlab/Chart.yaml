@@ -1,0 +1,19 @@
+annotations:
+  catalog.cattle.io/certified: playcekube
+  catalog.cattle.io/namespace: playcekube-dev
+  catalog.cattle.io/release-name: gitlab
+apiVersion: v1
+appVersion: v16.8.0
+description: GitLab is the most comprehensive AI-powered DevSecOps Platform.
+home: https://about.gitlab.com/
+icon: https://raw.githubusercontent.com/OpenSourceConsulting/playcekube-charts/v2.1.0/assets/icon/gitlab-icon.png
+keywords:
+- gitlab
+- develops
+maintainers:
+- email: support@gitlab.com
+  name: GitLab Inc.
+name: gitlab
+sources:
+- https://gitlab.com/gitlab-org/charts/gitlab
+version: 7.8.0

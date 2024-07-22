@@ -1,0 +1,12 @@
+annotations:
+  catalog.cattle.io/certified: playcekube
+  catalog.cattle.io/namespace: playcekube
+  catalog.cattle.io/release-name: csi-driver-nfs
+apiVersion: v1
+appVersion: v4.5.0
+description: CSI NFS Driver for Kubernetes
+keywords:
+- storage
+- infrastructure
+name: csi-driver-nfs
+version: v4.5.0
