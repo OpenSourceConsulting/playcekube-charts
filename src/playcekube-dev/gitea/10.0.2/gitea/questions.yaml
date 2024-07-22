@@ -8,7 +8,7 @@ questions:
   group: "Ingress Config"
   subquestions:
   - variable: ingress.hosts[0]
-    default: "gitea.local.cloud
+    default: "gitea.local.cloud"
     description: "gitea ingress hostname"
     type: string
     label: "Ingress URL Hostname"
