@@ -1,7 +1,0 @@
-questions:
-- variable: image.registry
-  default: ""
-  type: string
-  description: "container image registry url"
-  group: "Image Config"
-
