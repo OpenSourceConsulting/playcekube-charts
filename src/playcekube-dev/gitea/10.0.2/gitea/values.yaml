@@ -351,7 +351,7 @@ gitea:
   admin:
     # existingSecret: gitea-admin-secret
     existingSecret:
-    username: gitea_admin
+    username: gitea-admin
     password: r8sA8CPHD9!bt6d
     email: "gitea@local.domain"
 
@@ -516,7 +516,7 @@ postgresql-ha:
       database: gitea
       password: gitea
       username: gitea
-  enabled: true
+  enabled: false
   postgresql:
     repmgrPassword: changeme2
     postgresPassword: changeme1
@@ -552,7 +552,7 @@ postgresql:
       values:
       - '""'
 
-  enabled: false
+  enabled: true
   global:
     postgresql:
       auth:
