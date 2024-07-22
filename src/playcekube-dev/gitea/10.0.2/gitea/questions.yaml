@@ -3,7 +3,7 @@ questions:
   default: true
   description: Use ingress hostname
   type: boolean
-  label: Enable Ingress
+  label: "Enable Ingress"
   show_subquestion_if: true
   group: "Ingress Config"
   subquestions:
@@ -11,10 +11,10 @@ questions:
     default: "gitea.local.cloud
     description: "gitea ingress hostname"
     type: string
-    label: Ingress URL Hostname
+    label: "Ingress URL Hostname"
 - variable: image.registry
   default: ""
   type: string
-  description: "container image registry url"A
+  description: "container image registry url"
   group: "Image Config"
 
