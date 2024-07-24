@@ -10,6 +10,20 @@ questions:
     default: "gitea.local.cloud"
     type: string
     label: "Ingress URL Hostname"
+  - variable: ingress.tlsEnabled
+    default: false
+    type: boolean
+    label: "Enable Ingress TLS"
+    show_subquestion_if: true
+    subquestions:
+    - variable: ingress.tls.0.hosts.0
+      default: "gitea.local.cloud"
+      type: string
+      label: "Ingress TLS URL Hostname"
+    - variable: ingress.tls.0.secretName
+      default: "wild-tls"
+      type: string
+      label: "Ingress TLS secret name"
 - variable: global.imageRegistry
   default: ""
   type: string
