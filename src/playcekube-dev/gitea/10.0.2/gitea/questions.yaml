@@ -1,0 +1,18 @@
+questions:
+- variable: rancher.ingress.enabled
+  default: true
+  type: boolean
+  label: "Enable Ingress"
+  show_subquestion_if: true
+  group: "Ingress Config"
+  subquestions:
+  - variable: rancher.ingress.hostname
+    default: "gitea.local.cloud"
+    type: string
+    label: "Ingress URL Hostname"
+- variable: global.imageRegistry
+  default: ""
+  type: string
+  label: "Private image registry"
+  group: "Image Config"
+
