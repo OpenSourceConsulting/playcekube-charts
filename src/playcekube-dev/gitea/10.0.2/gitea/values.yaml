@@ -1,13 +1,6 @@
 # Default values for gitea.
 # This is a YAML-formatted file.
 # Declare variables to be passed into your templates.
-
-## @section rancher
-rancher:
-  ingress:
-    enabled: &ingressEnable false
-    hostname: &ingressHostname "git.local.cloud"
-
 ## @section Global
 #
 ## @param global.imageRegistry global image registry override
@@ -161,7 +154,7 @@ service:
 ## @param ingress.tls Ingress tls settings
 ## @extra ingress.apiVersion Specify APIVersion of ingress object. Mostly would only be used for argocd.
 ingress:
-  enabled: *ingressEnable
+  enabled: false
   # className: nginx
   className:
   annotations:
@@ -169,7 +162,7 @@ ingress:
     # kubernetes.io/ingress.class: nginx
     # kubernetes.io/tls-acme: "true"
   hosts:
-    - host: *ingressHostname
+    - host: gitea.local.cloud
       paths:
         - path: /
           pathType: Prefix
