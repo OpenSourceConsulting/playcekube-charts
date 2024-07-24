@@ -6,7 +6,7 @@ questions:
   show_subquestion_if: true
   group: "Ingress Config"
   subquestions:
-  - variable: ingress.hosts[0].host
+  - variable: ingress.hosts.host
     default: "gitea.local.cloud"
     type: string
     label: "Ingress URL Hostname"
