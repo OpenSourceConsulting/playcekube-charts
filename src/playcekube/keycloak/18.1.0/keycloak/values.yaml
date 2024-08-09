@@ -1035,15 +1035,15 @@ keycloakConfigCli:
   configuration:
     cluster_init.json: |
       {
-          "realm": "{{ Values.playcekube.clustername }}",
+          "realm": "{{ .Values.playcekube.clustername }}",
           "enabled": true,
-          "displayName": "Playce Kube - {{ Values.playcekube.clustername }} -",
-          "displayNameHtml": "<div class=\"kc-logo-text\"><span>Playce Kube - {{ Values.playcekube.clustername }} -</span></div>",
+          "displayName": "Playce Kube - {{ .Values.playcekube.clustername }} -",
+          "displayNameHtml": "<div class=\"kc-logo-text\"><span>Playce Kube - {{ .Values.playcekube.clustername }} -</span></div>",
           "clients": [
               {
                   "clientId": "kubernetes",
                   "enabled": true,
-                  "baseUrl": "https://keycloak.{{ Values.playcekube.clustername }}.{{ Values.playcekube.clusterdomain }}/auth/realms/{{ Values.playcekube.clustername }}/account/",
+                  "baseUrl": "https://keycloak.{{ .Values.playcekube.clustername }}.{{ .Values.playcekube.clusterdomain }}/auth/realms/{{ .Values.playcekube.clustername }}/account/",
                   "clientAuthenticatorType": "client-secret",
                   "redirectUris": [ "https://*" ],
                   "webOrigins": [ "*" ],
@@ -1096,19 +1096,19 @@ keycloakConfigCli:
                   "frontchannelLogout": true,
                   "attributes": {
                       "use.refresh.tokens": "true",
-                      "frontchannel.logout.url": "https://oauth2-proxy.{{ Values.playcekube.clustername }}.{{ Values.playcekube.clusterdomain }}/oauth2/sign_out"
+                      "frontchannel.logout.url": "https://oauth2-proxy.{{ .Values.playcekube.clustername }}.{{ .Values.playcekube.clusterdomain }}/oauth2/sign_out"
                   }
               }
           ],
           "users": [
               {
-                  "username": "{{ Values.auth.adminUser }}",
-                  "email": "{{ Values.auth.adminUser }}@{{ Values.playcekube.clustername }}.{{ Values.playcekube.clusterdomain }}",
+                  "username": "{{ .Values.auth.adminUser }}",
+                  "email": "{{ .Values.auth.adminUser }}@{{ .Values.playcekube.clustername }}.{{ .Values.playcekube.clusterdomain }}",
                   "enabled": true,
                   "credentials": [
                       {
                           "type": "password",
-                          "value": "{{ Values.auth.adminPassword }}"
+                          "value": "{{ .Values.auth.adminPassword }}"
                       }
                   ],
                   "attributes":
