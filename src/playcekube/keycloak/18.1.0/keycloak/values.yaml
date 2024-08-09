@@ -1032,9 +1032,6 @@ keycloakConfigCli:
   ##     realm: realm2
   ##     clients: []
   ##
-playcekube:
-  clustername: osci-devops
-
   configuration:
     cluster_init.json: |
       {
