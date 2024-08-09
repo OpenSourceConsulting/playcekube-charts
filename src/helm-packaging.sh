@@ -18,3 +18,5 @@ do
   done
 done
 
+helm repo index ${ROOT_PATH}
+

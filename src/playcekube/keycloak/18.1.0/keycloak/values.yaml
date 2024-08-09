@@ -20,6 +20,11 @@ global:
   imagePullSecrets: []
   storageClass: ""
 
+## Playce Kube config
+playcekube:
+  clustername: osci-devops
+  clusterdomain: local.cloud
+
 ## @section Common parameters
 ##
 
@@ -869,7 +874,7 @@ metrics:
 keycloakConfigCli:
   ## @param keycloakConfigCli.enabled Whether to enable keycloak-config-cli job
   ##
-  enabled: false
+  enabled: true
   ## Bitnami keycloak-config-cli image
   ## ref: https://hub.docker.com/r/bitnami/keycloak-config-cli/tags/
   ## @param keycloakConfigCli.image.registry [default: REGISTRY_NAME] keycloak-config-cli container image registry
@@ -1027,7 +1032,104 @@ keycloakConfigCli:
   ##     realm: realm2
   ##     clients: []
   ##
-  configuration: {}
+playcekube:
+  clustername: osci-devops
+
+  configuration:
+    cluster_init.json: |
+      {
+          "realm": "{{ Values.playcekube.clustername }}",
+          "enabled": true,
+          "displayName": "Playce Kube - {{ Values.playcekube.clustername }} -",
+          "displayNameHtml": "<div class=\"kc-logo-text\"><span>Playce Kube - {{ Values.playcekube.clustername }} -</span></div>",
+          "clients": [
+              {
+                  "clientId": "kubernetes",
+                  "enabled": true,
+                  "baseUrl": "https://keycloak.{{ Values.playcekube.clustername }}.{{ Values.playcekube.clusterdomain }}/auth/realms/{{ Values.playcekube.clustername }}/account/",
+                  "clientAuthenticatorType": "client-secret",
+                  "redirectUris": [ "https://*" ],
+                  "webOrigins": [ "*" ],
+                  "directAccessGrantsEnabled": true,
+                  "serviceAccountsEnabled": true,
+                  "publicClient": false,
+                  "protocol": "openid-connect",
+                  "protocolMappers": [
+                      {
+                          "name": "groups",
+                          "protocol": "openid-connect",
+                          "protocolMapper": "oidc-group-membership-mapper",
+                          "consentRequired": false,
+                          "config": {
+                              "full.path": "false",
+                              "id.token.claim": "true",
+                              "access.token.claim": "true",
+                              "claim.name": "groups",
+                              "userinfo.token.claim": "true"
+                          }
+                      },
+                      {
+                          "name": "audience",
+                          "protocol": "openid-connect",
+                          "protocolMapper": "oidc-audience-mapper",
+                          "consentRequired": false,
+                          "config": {
+                              "included.client.audience": "kubernetes",
+                              "id.token.claim": "false",
+                              "access.token.claim": "true",
+                              "included.custom.audience": "kubernetes"
+                          }
+                      },
+                      {
+                        "name": "policy",
+                        "protocol": "openid-connect",
+                        "protocolMapper": "oidc-usermodel-attribute-mapper",
+                        "consentRequired": false,
+                        "config": {
+                          "userinfo.token.claim": "true",
+                          "user.attribute": "policy",
+                          "id.token.claim": "true",
+                          "access.token.claim": "true",
+                          "claim.name": "policy",
+                          "jsonType.label": "String"
+                        }
+                      }
+      
+                  ],
+                  "frontchannelLogout": true,
+                  "attributes": {
+                      "use.refresh.tokens": "true",
+                      "frontchannel.logout.url": "https://oauth2-proxy.{{ Values.playcekube.clustername }}.{{ Values.playcekube.clusterdomain }}/oauth2/sign_out"
+                  }
+              }
+          ],
+          "users": [
+              {
+                  "username": "{{ Values.auth.adminUser }}",
+                  "email": "{{ Values.auth.adminUser }}@{{ Values.playcekube.clustername }}.{{ Values.playcekube.clusterdomain }}",
+                  "enabled": true,
+                  "credentials": [
+                      {
+                          "type": "password",
+                          "value": "{{ Values.auth.adminPassword }}"
+                      }
+                  ],
+                  "attributes":
+                  {
+                      "policy": "consoleAdmin"
+                  }
+               }
+          ],
+          "groups": [
+              {
+                  "name": "admin"
+              },
+              {
+                  "name": "developers"
+              }
+          ]
+      }
+
   ## @param keycloakConfigCli.existingConfigmap ConfigMap with keycloak-config-cli configuration
   ## NOTE: This will override keycloakConfigCli.configuration
   ##
